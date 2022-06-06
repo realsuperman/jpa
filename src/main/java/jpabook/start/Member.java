@@ -7,11 +7,9 @@ import javax.persistence.*;  //**
  * Date: 13. 5. 24. Time: 오후 7:43
  */
 @Entity
-@Table(name="MEMBER")
 public class Member {
 
     @Id
-    @Column(name = "ID")
     private String id;
 
     @Column(name = "NAME")
