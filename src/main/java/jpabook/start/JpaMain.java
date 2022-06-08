@@ -20,7 +20,9 @@ public class JpaMain {
 
 
             tx.begin(); //트랜잭션 시작
-            logic(em);  //비즈니스 로직
+            //logic(em);  //비즈니스 로직
+            //logic2(em);
+            logic3(em);
             tx.commit();//트랜잭션 커밋
 
         } catch (Exception e) {
@@ -57,6 +59,18 @@ public class JpaMain {
         //삭제
         em.remove(member);
 
+    }
+
+    public static void logic2(EntityManager em){
+        Board board = new Board();
+        em.persist(board);
+        System.out.println("board.id= "+board.getId());
+    }
+
+    public static void logic3(EntityManager em){
+        Board2 board = new Board2();
+        em.persist(board);
+        System.out.println("board.id= "+board.getId());
     }
 }
 

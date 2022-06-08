@@ -13,12 +13,16 @@ import java.util.Date;
         필드가 많은 경우 시간이 오래 걸릴 수 있다. 그랬을 땐 위 처럼 전략을 바꾸는 것도 좋다
      */
 @Entity
+@Table(name="MEMBER", uniqueConstraints = {@UniqueConstraint(
+        name="NAME_AGE_UNIQUE",
+        columnNames = {"NAME","AGE"}
+)})
 public class Member {
 
     @Id
     private String id;
 
-    @Column(name = "NAME")
+    @Column(name = "NAME", nullable = false, length = 10) // 이 처럼 Column에 상세 정보를 넣을 수 있다
     private String username;
 
     private Integer age;
