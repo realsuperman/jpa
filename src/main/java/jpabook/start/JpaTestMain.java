@@ -8,37 +8,37 @@ import javax.persistence.Persistence;
 public class JpaTestMain {
     static EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
     public static void main(String[] args){
-        Member member = createMember("memberA","회원2");
-        member.setUsername("회원명변경");
-        mergeMember(member);
+        Member2 Member2 = createMember2("Member2A","회원2");
+        Member2.setUsername("회원명변경");
+        mergeMember2(Member2);
     }
-    static Member createMember(String id,String userName){
+    static Member2 createMember2(String id,String userName){
         EntityManager em1 = emf.createEntityManager();
         EntityTransaction tx1 = em1.getTransaction();
         tx1.begin();
 
-        Member member = new Member();
-        member.setId(id);
-        member.setUsername(userName);
+        Member2 Member2 = new Member2();
+        Member2.setId(id);
+        Member2.setUsername(userName);
 
-        em1.persist(member);
+        em1.persist(Member2);
         tx1.commit();
 
         em1.close();
-        return member;
+        return Member2;
     }
-    static void mergeMember(Member member){
+    static void mergeMember2(Member2 Member2){
         EntityManager em2 = emf.createEntityManager();
         EntityTransaction tx2 = em2.getTransaction();
 
         tx2.begin();
-        Member mergeMember = em2.merge(member);
+        Member2 mergeMember2 = em2.merge(Member2);
         tx2.commit();
 
-        System.out.println("member = "+member.getUsername());
-        System.out.println("mergeMember = "+mergeMember.getUsername());
-        System.out.println("em2 contains member = "+em2.contains(member));
-        System.out.println("em2 contains member = "+em2.contains(mergeMember));
+        System.out.println("Member2 = "+Member2.getUsername());
+        System.out.println("mergeMember2 = "+mergeMember2.getUsername());
+        System.out.println("em2 contains Member2 = "+em2.contains(Member2));
+        System.out.println("em2 contains Member2 = "+em2.contains(mergeMember2));
         em2.close();
     }
 }

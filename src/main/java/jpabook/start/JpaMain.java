@@ -38,26 +38,26 @@ public class JpaMain {
     public static void logic(EntityManager em) {
 
         String id = "id1";
-        Member member = new Member();
-        member.setId(id);
-        member.setUsername("지한");
+        Member2 Member2 = new Member2();
+        Member2.setId(id);
+        Member2.setUsername("지한");
 
         //등록
-        em.persist(member);
+        em.persist(Member2);
 
         //수정
-        member.setAge(20);
+        Member2.setAge(20);
 
         //한 건 조회
-        Member findMember = em.find(Member.class, id);
-        System.out.println("findMember=" + findMember.getUsername() + ", age=" + findMember.getAge());
+        Member2 findMember2 = em.find(Member2.class, id);
+        System.out.println("findMember2=" + findMember2.getUsername() + ", age=" + findMember2.getAge());
 
         //목록 조회
-        List<Member> members = em.createQuery("select m from Member m", Member.class).getResultList(); //JPQL을 실행한 것
-        System.out.println("members.size=" + members.size());
+        List<Member2> Member2s = em.createQuery("select m from Member2 m", Member2.class).getResultList(); //JPQL을 실행한 것
+        System.out.println("Member2s.size=" + Member2s.size());
 
         //삭제
-        em.remove(member);
+        em.remove(Member2);
 
     }
 
