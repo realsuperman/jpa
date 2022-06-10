@@ -16,13 +16,13 @@ public class Team {
     private String name;
 
     @OneToMany(mappedBy = "team") // 양방향 매핑인 경우 mappedBy라는 속성을 줘야하고 이 값은 반대쪽 매핑의 필드 이름을 주면 된다
-    private List<Member> members = new ArrayList<Member>();
+    private List<SoccerMember> members = new ArrayList<SoccerMember>();
 
-    public List<Member> getMembers() {
+    public List<SoccerMember> getMembers() {
         return members;
     }
 
-    public void setMembers(List<Member> members) {
+    public void setMembers(List<SoccerMember> members) {
         this.members = members;
     }
 

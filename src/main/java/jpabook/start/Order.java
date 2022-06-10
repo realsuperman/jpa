@@ -1,7 +1,9 @@
 package jpabook.start;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name="ORDERS")
@@ -10,14 +12,42 @@ public class Order {
     @Column(name="ORDER_ID")
     private Long id;
 
-    @Column(name="MEMBER_ID")
-    private Long memberId;
+    @ManyToOne
+    @JoinColumn(name="MEMBER_ID")
+    private Member member;
+
+    @OneToMany(mappedBy = "order")
+    private List<OrderItem> orderItems = new ArrayList<OrderItem>();
 
     @Temporal(TemporalType.TIMESTAMP) // 참고로 기본값이 TIMESTAMP이므로 생략해도 된다
     private Date orderDate;
 
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
+
+    public void addOrderItem(OrderItem orderItem){
+        orderItems.add(orderItem);
+        orderItem.setOrder(this);
+    }
+    public Member getMember() {
+        return member;
+    }
+
+    public void setMember(Member member) {
+        if(this.member!=null){
+            this.member.getOrders().remove(this);
+        }
+        this.member=member;
+        member.getOrders().add(this);
+    }
+
+    public List<OrderItem> getOrderItems() {
+        return orderItems;
+    }
+
+    public void setOrderItems(List<OrderItem> orderItems) {
+        this.orderItems = orderItems;
+    }
 
     public Long getId() {
         return id;
@@ -27,13 +57,6 @@ public class Order {
         this.id = id;
     }
 
-    public Long getMemberId() {
-        return memberId;
-    }
-
-    public void setMemberId(Long memberId) {
-        this.memberId = memberId;
-    }
 
     public Date getOrderDate() {
         return orderDate;
