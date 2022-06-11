@@ -20,6 +20,10 @@ public class DoubleTest {
         item.setName("치즈");
         item.setPrice(1000);
         em1.persist(item);
+        Item item2 = new Item();
+        item2.setName("피자");
+        item2.setPrice(10000);
+        em1.persist(item2);
 
         Order order = new Order();
         order.setMember(member);
@@ -28,7 +32,10 @@ public class DoubleTest {
         OrderItem orderItem = new OrderItem();
         orderItem.setOrder(order);
         orderItem.setItem(item);
+        orderItem.setCount(1);
+        orderItem.setOrderPrice(item.getPrice());
         em1.persist(orderItem);
+        order.addOrderItem(orderItem);
 
 
         tx1.commit();

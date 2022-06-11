@@ -33,6 +33,9 @@ public class OrderItem {
     }
 
     public void setOrder(Order order) {
+        if(this.order!=null){
+            this.order.getOrderItems().remove(this);
+        }
         this.order = order;
     }
 
