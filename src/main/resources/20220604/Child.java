@@ -2,24 +2,21 @@ package jpabook.start;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import java.util.List;
 
 @Entity
-public class Product {
-    @Id
-    @Column(name="PRODUCT_ID")
-    private String id;
+public class Child {
+    @Id @GeneratedValue
+    @Column(name="CHILD_ID")
+    private Long id;
     private String name;
-    @ManyToMany(mappedBy = "products")
-    private List<Player> members;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

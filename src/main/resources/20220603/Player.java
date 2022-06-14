@@ -1,4 +1,4 @@
-package jpabook.start;
+package dummy;
 
 import javax.persistence.*;
 import java.util.ArrayList;

@@ -11,13 +11,6 @@ public class DoubleTest {
     public static void main(String[] args) throws Exception {
         EntityManager em1 = emf.createEntityManager();
         EntityTransaction tx1 = em1.getTransaction();
-        ParentId id1 = new ParentId();
-        id1.setId1("myId1");
-        id1.setId1("myId2");
-        ParentId id2 = new ParentId();
-        id2.setId1("myId1");
-        id2.setId1("myId3");
-        if(id1.equals(id2)) throw new Exception("error");
 
         tx1.begin();
         /*Parent parent = new Parent(); //아래처럼 ParentId 객체를 생성 안해도 된다(persist시 자동으로 생성해서 영속성 컨텍스트에 저장함)

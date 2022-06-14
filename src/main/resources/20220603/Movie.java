@@ -1,11 +1,11 @@
-package jpabook.start;
+package dummy;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
 @DiscriminatorValue("M")
-public class Movie extends Item{
+public class Movie extends Common{
     private String director;
     private String actor;
 

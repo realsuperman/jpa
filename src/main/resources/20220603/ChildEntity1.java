@@ -1,8 +1,5 @@
-package jpabook.start;
+package dummy;
 
-import javax.persistence.AttributeOverride;
-import javax.persistence.AttributeOverrides;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity

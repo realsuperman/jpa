@@ -1,28 +1,26 @@
 package jpabook.start;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+import java.util.Date;
 
-@MappedSuperclass // 이 어노테이션은 부모테이블은 논리상으로 존재하게 한다 즉, 실제 테이블과 매핑은 안시킨다(어지간하면 추상 클래스로 만들자)
-public abstract class BaseEntity {
-    @Id @GeneratedValue
-    private Long id;
-    private String name;
+@MappedSuperclass
+public class BaseEntity {
+    private Date createdDate;
+    private Date lastModifiedDate;
 
-    public Long getId() {
-        return id;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
-    public String getName() {
-        return name;
+    public Date getLastModifiedDate() {
+        return lastModifiedDate;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLastModifiedDate(Date lastModifiedDate) {
+        this.lastModifiedDate = lastModifiedDate;
     }
 }

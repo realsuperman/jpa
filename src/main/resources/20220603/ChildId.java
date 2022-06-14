@@ -1,4 +1,4 @@
-package jpabook.start;
+package dummy;
 
 import java.io.Serializable;
 import java.util.Objects;
