@@ -13,6 +13,35 @@ public class DoubleTest {
         EntityTransaction tx1 = em1.getTransaction();
 
         tx1.begin();
+        Delivery delivery = new Delivery();
+        OrderItem orderItem1 = new OrderItem();
+        OrderItem orderItem2 = new OrderItem();
+        Order order = new Order();
+        order.setDelivery(delivery);
+        order.addOrderItem(orderItem1);
+        order.addOrderItem(orderItem2);
+        em1.persist(order);
+
+
+        /*Child child1 = new Child();
+        Child child2 = new Child();
+        Parent parent = new Parent();
+        child1.setParent(parent);
+        child2.setParent(parent);
+        parent.getChildren().add(child1);
+        parent.getChildren().add(child2);
+        em1.persist(parent);*/
+
+/*        Parent parent = new Parent();
+        em1.persist(parent);
+        Child child1 = new Child();
+        child1.setParent(parent);
+        em1.persist(child1);
+        Child child2 = new Child();
+        child2.setParent(parent);
+        em1.persist(child2);*/
+
+
         /*Parent parent = new Parent(); //아래처럼 ParentId 객체를 생성 안해도 된다(persist시 자동으로 생성해서 영속성 컨텍스트에 저장함)
         parent.setId1("myId1");
         parent.setId2("myId2");
