@@ -13,16 +13,21 @@ public class DoubleTest {
         EntityTransaction tx1 = em1.getTransaction();
 
         tx1.begin();
-        Delivery delivery = new Delivery();
-        OrderItem orderItem1 = new OrderItem();
-        OrderItem orderItem2 = new OrderItem();
-        Order order = new Order();
-        order.setDelivery(delivery);
-        order.addOrderItem(orderItem1);
-        order.addOrderItem(orderItem2);
-        em1.persist(order);
+/*        Member2 member = new Member2();
+        member.setHomeAddress(new Address2("통영","몽돌해수욕장","660-123"));
+        member.getFavoriteFodds().add("짬뽕");
+        member.getFavoriteFodds().add("짜장");
+        member.getFavoriteFodds().add("탕수육");
+        member.getAddressHistory().add(new Address2("서울","강남","123-123"));
+        member.getAddressHistory().add(new Address2("서울","강북","000-000"));
+        em1.persist(member);*/
+        /*Test test = new Test();
+        PhoneServiceProvider phone = new PhoneServiceProvider("test");
+        test.setPhoneServiceProvider(phone);
 
-
+        PhoneServiceProvider phone2 = new PhoneServiceProvider(phone.getName());
+        em1.persist(test);
+*/
         /*Child child1 = new Child();
         Child child2 = new Child();
         Parent parent = new Parent();
