@@ -1,4 +1,4 @@
-package jpabook.start;
+package domain;
 
 public enum DeliveryStatus {
     READY, // 준비

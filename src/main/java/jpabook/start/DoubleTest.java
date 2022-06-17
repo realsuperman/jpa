@@ -5,6 +5,11 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import java.util.List;
+import java.util.Set;
 
 public class DoubleTest {
     static EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
@@ -13,14 +18,42 @@ public class DoubleTest {
         EntityTransaction tx1 = em1.getTransaction();
 
         tx1.begin();
-/*        Member2 member = new Member2();
+/*        String sql = "select id,name from member where name='kim'";
+        List<Member> resultList = em1.createNativeQuery(sql,Member.class).getResultList();*/
+        /*CriteriaBuilder cb = em1.getCriteriaBuilder();
+        CriteriaQuery<Member> query = cb.createQuery(Member.class);
+        Root<Member> m = query.from(Member.class);
+        CriteriaQuery<Member> cq = query.select(m).where(cb.equal(m.get("username"),"kim"));
+        List<Member> resultList = em1.createQuery(cq).getResultList();*/
+        /*String jpql = "select m from Member as m where m.username='kim'";
+        List<Member> resultList = em1.createQuery(jpql,Member.class).getResultList();*/
+/*        Member2 member = em1.find(Member2.class,1L);
+        member.setHomeAddress(new Address2("새로운도시","신도시1","123456"));
+        Set<String> favoriteFoods = member.getFavoriteFodds();
+        favoriteFoods.remove("탕수육");
+        favoriteFoods.add("치킨");
+        List<Address2> addressHistory = member.getAddressHistory();
+        addressHistory.remove(new Address2("서울","기존 주소","123-123"));
+        addressHistory.add(new Address2("새로운도시","새로운 주소","123-456"));*/
+/*        Address2 addres = member.getHomeAddress();
+        Set<String> favoriteFoods = member.getFavoriteFodds();
+        for(String favoriteFood : favoriteFoods){
+            System.out.println("favoriteFood = "+favoriteFood);
+        }
+        List<Address2> list = member.getAddressHistory();
+        list.get(0);*/
+
+/*
+        Member2 member = new Member2();
         member.setHomeAddress(new Address2("통영","몽돌해수욕장","660-123"));
         member.getFavoriteFodds().add("짬뽕");
         member.getFavoriteFodds().add("짜장");
         member.getFavoriteFodds().add("탕수육");
         member.getAddressHistory().add(new Address2("서울","강남","123-123"));
         member.getAddressHistory().add(new Address2("서울","강북","000-000"));
-        em1.persist(member);*/
+        em1.persist(member);
+*/
+
         /*Test test = new Test();
         PhoneServiceProvider phone = new PhoneServiceProvider("test");
         test.setPhoneServiceProvider(phone);

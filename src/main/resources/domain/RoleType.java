@@ -1,4 +1,4 @@
-package jpabook.start;
+package domain;
 
 public enum RoleType {
     ADMIN,USER

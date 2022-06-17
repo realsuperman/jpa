@@ -1,28 +1,19 @@
 package jpabook.start;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Member extends BaseEntity{
+public class Member {
     @Id @GeneratedValue
-    @Column(name="MEMBER_ID")
     private Long id;
-    private String name;
-    private String city;
-    private String street;
-    private String zipCode;
+    @Column(name="NAME")
+    private String username;
+    private int age;
     @OneToMany(mappedBy = "member")
-    private List<Order> orders = new ArrayList<Order>();
-
-    public List<Order> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(List<Order> orders) {
-        this.orders = orders;
-    }
+    private List<Order> orders;
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Team team;
 
     public Long getId() {
         return id;
@@ -32,35 +23,35 @@ public class Member extends BaseEntity{
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getCity() {
-        return city;
+    public int getAge() {
+        return age;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public String getStreet() {
-        return street;
+    public List<Order> getOrders() {
+        return orders;
     }
 
-    public void setStreet(String street) {
-        this.street = street;
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
     }
 
-    public String getZipCode() {
-        return zipCode;
+    public Team getTeam() {
+        return team;
     }
 
-    public void setZipCode(String zipCode) {
-        this.zipCode = zipCode;
+    public void setTeam(Team team) {
+        this.team = team;
     }
 }

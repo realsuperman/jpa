@@ -1,4 +1,4 @@
-package jpabook.start;
+package domain;
 
 import javax.persistence.*;
 

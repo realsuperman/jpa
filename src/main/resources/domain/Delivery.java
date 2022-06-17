@@ -1,4 +1,4 @@
-package jpabook.start;
+package domain;
 
 import javax.persistence.*;
 
@@ -11,9 +11,12 @@ public class Delivery {
     @OneToOne(mappedBy = "delivery")
     private Order order;
 
-    private String city;
+/*    private String city;
     private String street;
-    private String zipCode;
+    private String zipCode;*/
+
+    @Embedded
+    private Address address;
 
     @Enumerated(EnumType.STRING)
     private DeliveryStatus status;
@@ -34,6 +37,14 @@ public class Delivery {
         this.order = order;
     }
 
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+/*
     public String getCity() {
         return city;
     }
@@ -57,6 +68,7 @@ public class Delivery {
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }
+*/
 
     public DeliveryStatus getStatus() {
         return status;

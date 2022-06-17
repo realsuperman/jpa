@@ -18,9 +18,20 @@ public class Member2 {
     @Column(name="FOOD_NAME") // 사용하는 컬럼이 하나면 @Column을 사용해서 컬럼명을 지정할 수 있다
     private Set<String> favoriteFodds = new HashSet<>();
 
-    @ElementCollection
+    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true)
+    @JoinColumn(name="MEMBER_ID")
+    private List<AddressEntity> addressHistory = new ArrayList<>();
+
+    public List<AddressEntity> getAddressHistory() {
+        return addressHistory;
+    }
+
+    public void setAddressHistory(List<AddressEntity> addressHistory) {
+        this.addressHistory = addressHistory;
+    }
+/*    @ElementCollection
     @CollectionTable(name="ADDRESS", joinColumns = @JoinColumn(name="MEMBER_ID"))
-    private List<Address2> addressHistory = new ArrayList<>();
+    private List<Address2> addressHistory = new ArrayList<>();*/
 
     public Long getId() {
         return id;
@@ -46,11 +57,11 @@ public class Member2 {
         this.favoriteFodds = favoriteFodds;
     }
 
-    public List<Address2> getAddressHistory() {
+/*    public List<Address2> getAddressHistory() {
         return addressHistory;
     }
 
     public void setAddressHistory(List<Address2> addressHistory) {
         this.addressHistory = addressHistory;
-    }
+    }*/
 }
