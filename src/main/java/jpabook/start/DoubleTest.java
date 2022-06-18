@@ -1,10 +1,7 @@
 package jpabook.start;
 
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
+import javax.persistence.*;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
@@ -18,6 +15,55 @@ public class DoubleTest {
         EntityTransaction tx1 = em1.getTransaction();
 
         tx1.begin();
+        String teamName = "팀A";
+        String query = "SELECT m FROM Member m JOIN m.team t WHERE t.name=?1";
+        List<Member> list = em1.createQuery(query,Member.class).setParameter(1,"SSG").getResultList();
+        System.out.println(list.get(0).getUsername());
+/*        List<Object[]> list = em1.createQuery("SELECT t.name, COUNT(m.age), SUM(m.age), AVG(m.age), MAX(m.age),MIN(m.age) FROM Member m LEFT JOIN m.team t GROUP BY t.name").getResultList();
+        for(Object[] o : list){
+           System.out.println((String)o[0]+" "+(double)o[3]);
+        }*/
+/*        TypedQuery<Member> query = em1.createQuery("SELECT m FROM Member m ORDER BY m.username DESC",Member.class);
+        query.setFirstResult(0);
+        query.setMaxResults(20);
+        List<Member> list = query.getResultList();
+        for(Member m : list) System.out.println(m.getUsername());*/
+/*        List<UserDto> list = em1.createQuery("SELECT new jpabook.start.UserDto(m.username,m.age) FROM Member m",UserDto.class).getResultList();
+        for(UserDto dto : list) System.out.println(dto.getUsername()+" "+dto.getAge());*/
+/*        List<Object[]> list = em1.createQuery("SELECT m.id,m.age FROM Member m").getResultList();
+        for(Object[] o : list){
+            Long id = (Long)o[0];
+            int age = (int)o[1];
+            System.out.println(id+" "+age);
+        }*/
+        /*
+        Double orderAmg = em1.createQuery("SELECT AVG(o.orderAmount) FROM Order o",Double.class).getSingleResult();
+        System.out.println(orderAmg);*/
+       /* List<Address> list = em1.createQuery("SELECT o.address FROM Order o").getResultList();
+        for(Address address : list ) System.out.println(address.getCity()+" "+address.getStreet()+" "+address.getZipcode())*/
+        //List<Team> list = em1.createQuery("SELECT m.team FROM Member m WHERE m.id=?1").setParameter(1,5L).getResultList();
+        //System.out.println(list.get(0).getId()+" "+list.get(0).getName());
+/*        String usernameParam="최성훈";
+        TypedQuery<Member> query = em1.createQuery("SELECT m from Member m where m.username = ?1",Member.class)
+                                        .setParameter("username2",usernameParam)*/;
+/*        query.setParameter("username2",usernameParam);
+        List<Member> list = query.getResultList();
+        System.out.println(list.size());*/
+        /*String sql = "SELECT m.username,m.age FROM Member m";
+        Query query = em1.createQuery(sql);
+        //TypedQuery<Member> query = em1.createQuery(sql,Member.class);
+        List list = query.getResultList();
+        for(Object object : list){
+            Object[] result = (Object [])object;
+            System.out.println(result[0]+" "+result[1]);
+        }*/
+        //TypedQuery<Member> query = em1.createQuery("SELECT m FROM Member m",Member.class);
+/*        Query query =em1.createQuery("SELECT m.username,m.age from Member m");
+        List list = query.getResultList();
+        for(Object o  : list){
+            Object[] result = (Object[])o;
+            System.out.println(result[0]);
+        }*/
 /*        String sql = "select id,name from member where name='kim'";
         List<Member> resultList = em1.createNativeQuery(sql,Member.class).getResultList();*/
         /*CriteriaBuilder cb = em1.getCriteriaBuilder();
