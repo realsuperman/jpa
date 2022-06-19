@@ -15,10 +15,49 @@ public class DoubleTest {
         EntityTransaction tx1 = em1.getTransaction();
 
         tx1.begin();
-        String teamName = "팀A";
+        List<Team> list = em1.createQuery("SELECT t FROM Team t LEFT JOIN t.member m WHERE t.id=1").getResultList();
+        System.out.println(list.size());
+/*        String jpql = "select t from Team t join t.member where t.name='LG'";
+        List<Team> teams = em1.createQuery(jpql,Team.class).getResultList();
+        System.out.println(teams.size());
+        for(Team team : teams){
+            System.out.println(team.getName());
+            for(Member member : team.getMember()){
+                System.out.println(member.getUsername());
+            }
+        }*/
+        //for(Object[] obj: list){
+            //System.out.println("test");
+            //Team team = (Team)obj[0];
+            //Member member = (Member) obj[1];
+            //System.out.println(member.getUsername());
+        //}
+/*        List<Member> list = em1.createQuery("SELECT m FROM Member m join fetch m.team").getResultList();
+        for(Member member : list){
+            System.out.println(member.getUsername());
+        }*/
+/*        List<Member> list = em1.createQuery("SELECT m FROM Member m join fetch m.team").getResultList();
+        Team team = list.get(0).getTeam();
+        boolean isLoad = emf.getPersistenceUnitUtil().isLoaded(team);
+        System.out.println(isLoad);*/
+        //List<Object[]> result = em1.createQuery("SELECT t,m FROM Team t LEFT JOIN t.member m ON t.id=1L").getResultList();
+/*        List<Object[]> result = em1.createQuery("SELECT m,t from Member m left join m.team t on t.name='SSG'").getResultList();
+        System.out.println(result.size());
+        for(Object[] obj : result){
+            Team team = (Team) obj[0];
+            Member member = (Member) obj[1];
+            System.out.println(member.getUsername());
+        }*/
+/*        List<Object[]> result = em1.createQuery("SELECT m,t FROM Member m JOIN m.team t").getResultList();
+        for(Object[] o : result){
+            Member member = (Member)o[0];
+            Team team = (Team)o[1];
+
+        }*/
+/*        String teamName = "팀A";
         String query = "SELECT m FROM Member m JOIN m.team t WHERE t.name=?1";
         List<Member> list = em1.createQuery(query,Member.class).setParameter(1,"SSG").getResultList();
-        System.out.println(list.get(0).getUsername());
+        System.out.println(list.get(0).getUsername());*/
 /*        List<Object[]> list = em1.createQuery("SELECT t.name, COUNT(m.age), SUM(m.age), AVG(m.age), MAX(m.age),MIN(m.age) FROM Member m LEFT JOIN m.team t GROUP BY t.name").getResultList();
         for(Object[] o : list){
            System.out.println((String)o[0]+" "+(double)o[3]);
