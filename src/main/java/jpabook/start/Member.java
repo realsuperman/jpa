@@ -4,6 +4,20 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
+/*@NamedQuery( // 정적쿼리 선언
+        name="Member.findByUsername",
+        query="select m from Member m where m.username=:username"
+)*/
+@NamedQueries({ // 정적쿼리 여러개 선언
+        @NamedQuery( // 정적쿼리 선언
+                name = "Member.findByUsername",
+                query = "select m from Member m where m.username=:username"
+        ),
+        @NamedQuery( // 정적쿼리 선언
+                name = "Member.findByUsername2",
+                query = "select m from Member m where m.username=:username"
+        )
+})
 public class Member {
     @Id @GeneratedValue
     private Long id;

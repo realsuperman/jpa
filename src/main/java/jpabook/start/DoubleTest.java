@@ -4,6 +4,7 @@ package jpabook.start;
 import javax.persistence.*;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import java.util.List;
 import java.util.Set;
@@ -15,8 +16,40 @@ public class DoubleTest {
         EntityTransaction tx1 = em1.getTransaction();
 
         tx1.begin();
-        List<Team> list = em1.createQuery("SELECT t FROM Team t LEFT JOIN t.member m WHERE t.id=1").getResultList();
-        System.out.println(list.size());
+        CriteriaBuilder cb = em1.getCriteriaBuilder();
+
+        CriteriaQuery<Member> m = cb.createQuery(Member.class);
+        Root<Member> root = m.from(Member.class);
+        m.select(root);
+        m.where(cb.greaterThan(root.get("age"),10));
+        m.orderBy(cb.desc(root.get("age")));
+        List<Member> list = em1.createQuery(m).getResultList();
+        for(Member member: list) System.out.println(member.getUsername());
+/*        CriteriaBuilder cb = em1.getCriteriaBuilder(); // Criteria를 사용하려면 빌더를 항상 선언해야 한다.
+        CriteriaQuery<Member> cq = cb.createQuery(Member.class); // Criteria 생성 및 반환 타입 지정
+        Root<Member> m = cq.from(Member.class); // FROM 절
+        cq.select(m);
+        Predicate usernameEqual = cb.equal(m.get("username"),"회원1");
+        javax.persistence.criteria.Order ageFesc = cb.desc(m.get("age"));
+        cq.select(m).where(usernameEqual).orderBy(ageFesc);
+        List<Member> list = em1.createQuery(cq).getResultList();
+        for(Member member : list) System.out.println(member.getUsername());*/
+/*        Member member = em1.createNamedQuery("Member.findByUsername",Member.class).setParameter("username","최성훈").getSingleResult(); // 정적쿼리 실행한 것 createNamedQuery라고 적어야 함 주의필요
+        System.out.println(member.getUsername());*/
+/*        List<Object[]> list = em1.createQuery("SELECT case when m.age<=10 then '학생' WHEN m.age<=30 THEN '성인' ELSE '일반' END ,m.username FROM Member m").getResultList();
+        for(Object[] o : list) System.out.println( (String)o[0] + " "+(String)o[1]);*/
+/*        List<Member> list = em1.createQuery("select m from Member m where m.orders is empty ").getResultList();
+        for(Member member : list) System.out.println(member.getUsername());*/
+        /*List<Member> list = em1.createQuery("SELECT m FROM Member m where m.id IN (select o.member.id from Order o )").getResultList();
+        for(Member member : list){
+            System.out.println(member.getUsername());
+        }*/
+        /*List<Member> list = em1.createQuery("select m from Member m where (select count(o) from Order o where m=o.member)>0").getResultList();
+        for(Member m : list){
+            System.out.println(m.getUsername());
+        }*/
+/*        List<Team> list = em1.createQuery("SELECT t FROM Team t LEFT JOIN t.member m WHERE t.id=1").getResultList();
+        System.out.println(list.size());*/
 /*        String jpql = "select t from Team t join t.member where t.name='LG'";
         List<Team> teams = em1.createQuery(jpql,Team.class).getResultList();
         System.out.println(teams.size());
@@ -34,7 +67,7 @@ public class DoubleTest {
         //}
 /*        List<Member> list = em1.createQuery("SELECT m FROM Member m join fetch m.team").getResultList();
         for(Member member : list){
-            System.out.println(member.getUsername());
+            System.out.println(member.getUsername+());
         }*/
 /*        List<Member> list = em1.createQuery("SELECT m FROM Member m join fetch m.team").getResultList();
         Team team = list.get(0).getTeam();
