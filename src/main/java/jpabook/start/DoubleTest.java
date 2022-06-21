@@ -1,11 +1,10 @@
 package jpabook.start;
 
 
+
 import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
+import javax.persistence.criteria.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -16,7 +15,162 @@ public class DoubleTest {
         EntityTransaction tx1 = em1.getTransaction();
 
         tx1.begin();
+        Integer age = null;
+        String username = null;
+        String teamName = "SKT";
         CriteriaBuilder cb = em1.getCriteriaBuilder();
+        CriteriaQuery<Member> cq = cb.createQuery(Member.class);
+        Root<Member> m = cq.from(Member.class);
+        Join<Member,Team> t = m.join("team");
+        List<Predicate> criteria = new ArrayList<>();
+        if(age!=null) criteria.add(cb.equal(m.get("age"),cb.parameter(Integer.class,"age")));
+        if(username!=null) criteria.add(cb.equal(m.get("username"),cb.parameter(String.class,"username")));
+        if(teamName!=null) criteria.add(cb.equal(t.get("name"),cb.parameter(String.class,"teamName")));
+        cq.where(cb.and(criteria.toArray(new Predicate[0])));
+        TypedQuery<Member> query = em1.createQuery(cq);
+        if(age!=null) query.setParameter("age",age);
+        if(username!=null) query.setParameter("username",username);
+        if(teamName!=null) query.setParameter("teamName",teamName);
+        List<Member> list = query.getResultList();
+        for(Member member : list) System.out.println(member.getUsername());
+
+
+/*        Integer age = null;
+        String username = null;
+        String teamName = "SKT";
+        StringBuilder jpql = new StringBuilder("select m from Member m join m.team t");
+        List<String> criteria = new ArrayList<>();
+        if(age!=null) criteria.add(" m.age=:age ");
+        if(username!=null) criteria.add(" m.username=:username ");
+        if(teamName!=null) criteria.add(" t.name=:teamName ");
+        if(criteria.size()>0) jpql.append(" where ");
+        for(int i=0;i<criteria.size();i++){
+            if(i>0) jpql.append(" and ");
+            jpql.append(criteria.get(i));
+        }
+        TypedQuery<Member> query = em1.createQuery(jpql.toString(),Member.class);
+        if(age!=null) query.setParameter("age",age);
+        if(username!=null) query.setParameter("username",username);
+        if(teamName!=null) query.setParameter("teamName",teamName);
+        List<Member> list = query.getResultList();
+        for(Member member : list) System.out.println(member.getUsername());*/
+        /*
+        CriteriaBuilder cb = emf.getCriteriaBuilder();
+        CriteriaQuery<Member> cq = cb.createQuery(Member.class);
+        Root<Member> m = cq.from(Member.class);
+*/
+/*        Expression<Long> function = cb.function("SUM",Long.class,m.get("age"));
+        cq.select(function);*/
+/*
+        cq.select(m);
+        cq.where(cb.equal(m.get("username"),cb.parameter(String.class,"usernameParam")));
+        List<Member> list = em1.createQuery(cq).setParameter("usernameParam","최성훈").getResultList();
+        for(Member member : list) System.out.println(member.getUsername());
+*/
+/*        CriteriaQuery<Object[]> query = cb.createQuery(Object[].class);
+        Root<Member> root = query.from(Member.class);
+        query.multiselect(
+          root.get("username"),
+          cb.selectCase()
+                .when(cb.ge(root.get("age"),40),600)
+                .when(cb.le(root.get("age"),15),500)
+                .otherwise(1000)
+        );
+        List<Object[]> list = em1.createQuery(query).getResultList();
+        for(Object[]  obj: list ){
+            String name = (String)obj[0];
+            int value = (int)obj[1];
+            System.out.println(name+" "+value);
+        }*/
+/*        CriteriaQuery<Member> query = cb.createQuery(Member.class);
+        Root<Member> root = query.from(Member.class);
+        Join<Member,Team> t = root.join("team",JoinType.INNER);
+        query.select(root);
+        query.where(cb.equal(t.get("id"),1));
+        List<Member> list = em1.createQuery(query).getResultList();
+        for(Member member : list) System.out.println(member.getUsername());*/
+/*        CriteriaQuery<Member> cq = cb.createQuery(Member.class);
+        Root<Member> m = cq.from(Member.class);
+        cq.select(m).where(cb.in(m.get("username")).value("최성훈"));
+        List<Member> list = em1.createQuery(cq).getResultList();
+        for(Member member : list){
+            System.out.println(member.getUsername());
+        }*/
+/*        CriteriaQuery<Member> mainQuery = cb.createQuery(Member.class);
+        Root<Member> m = mainQuery.from(Member.class);
+
+        Subquery<Team> subQuery = mainQuery.subquery(Team.class);
+        Root<Member> subM = subQuery.correlate(m);
+        Join<Member,Team> t = subM.join("team");
+        subQuery.select(t).where(cb.equal(t.get("name"),"SSG"));
+        mainQuery.select(m).where(cb.exists(subQuery));
+        List<Member> list = em1.createQuery(mainQuery).getResultList();
+        for(Member member : list ) System.out.println(member.getUsername());*/
+/*        CriteriaQuery<Member> query = cb.createQuery(Member.class);
+        Subquery<Double> subQuery = query.subquery(Double.class);
+
+        Root<Member> m2 = subQuery.from(Member.class);
+        subQuery.select(cb.avg(m2.get("age")));
+        Root<Member> m = query.from(Member.class);
+        query.select(m);
+        query.where(cb.ge(m.get("age"),subQuery));
+        List<Member> list = em1.createQuery(query).getResultList();
+        for(Member member : list ) System.out.println(member.getUsername());*/
+/*        CriteriaQuery<Object[]> query = cb.createQuery(Object[].class);
+        Root<Member> m = query.from(Member.class);
+        Join<Member,Team> t = m.join("team",JoinType.INNER);
+        query.multiselect(m,t);
+        query.where(cb.equal(t.get("name"),"SSG"));
+        List<Object[]> list = em1.createQuery(query).getResultList();
+        for(Object[] obj : list){
+            Member member = (Member) obj[0];
+            Team team = (Team)obj[1];
+            System.out.println(member.getUsername()+" "+team.getName());
+        }*/
+/*        CriteriaQuery<Tuple> query = cb.createTupleQuery();
+        Root<Member> m = query.from(Member.class);
+        query.groupBy(m.get("team").get("name"));
+        query.having(cb.greaterThan(cb.max(m.get("age")),30));
+        query.multiselect(
+            m.get("team").get("name").alias("teamName"),
+            cb.max(m.get("age")).alias("maxAge"),
+            cb.min(m.get("age")).alias("minAge")
+        );
+        List<Tuple> list = em1.createQuery(query).getResultList();
+        for(Tuple tuple : list ){
+            String name = tuple.get("teamName",String.class);
+            int maxAge = tuple.get("maxAge",Integer.class);
+            int minAge = tuple.get("minAge",Integer.class);
+            System.out.println(name+" "+minAge+" "+maxAge);
+        }*/
+/*        query.multiselect(
+                m.alias("m"),
+                m.get("username").alias("username"),
+                m.get("age").alias("age")
+        );
+        List<Tuple> list = em1.createQuery(query).getResultList();
+        for(Tuple tuple : list){
+            Member member = tuple.get("m",Member.class);
+            String username = tuple.get("username",String.class);
+            Integer age = tuple.get("age",Integer.class);
+            System.out.println(member.getId()+username+" "+age);
+        }*/
+/*        query.select(cb.construct(UserDto.class,m.get("username"),m.get("age")));
+        List<UserDto> list = em1.createQuery(query).getResultList();
+        for(UserDto dto : list) System.out.println(dto.getUsername());*/
+/*        query.multiselect(m.get("username"),m.get("age")).distinct(true); // 뒤에 distinct키워드가 붙는다
+        List<Object[]>  list = em1.createQuery(query).getResultList();
+        for(Object[] obj : list) System.out.println((String)obj[0]+" "+(int)obj[1]);*/
+        //query.multiselect(m.get("age"),m.get("username"));
+        //query.select(cb.array(m.get("age"),m.get("username")));
+        //query.where(cb.greaterThan(m.get("age"),40));
+        //query.where(cb.equal(m.get("username"),"최성훈"));
+        //query.orderBy(cb.desc(m.get("age")));
+        //List<Object[]> list = em1.createQuery(query).getResultList();
+        //for(Object[] obj: list) System.out.println((int)obj[0]+" "+(String)obj[1]);
+/*        List<Team> list = em1.createQuery("SELECT t FROM Team t JOIN t.member m WHERE t.id=1").getResultList();
+        for(Team t : list) System.out.println(t.getName());*/
+/*        CriteriaBuilder cb = em1.getCriteriaBuilder();
 
         CriteriaQuery<Member> m = cb.createQuery(Member.class);
         Root<Member> root = m.from(Member.class);
@@ -24,7 +178,7 @@ public class DoubleTest {
         m.where(cb.greaterThan(root.get("age"),10));
         m.orderBy(cb.desc(root.get("age")));
         List<Member> list = em1.createQuery(m).getResultList();
-        for(Member member: list) System.out.println(member.getUsername());
+        for(Member member: list) System.out.println(member.getUsername());*/
 /*        CriteriaBuilder cb = em1.getCriteriaBuilder(); // Criteria를 사용하려면 빌더를 항상 선언해야 한다.
         CriteriaQuery<Member> cq = cb.createQuery(Member.class); // Criteria 생성 및 반환 타입 지정
         Root<Member> m = cq.from(Member.class); // FROM 절
