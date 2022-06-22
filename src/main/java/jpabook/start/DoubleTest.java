@@ -2,19 +2,87 @@ package jpabook.start;
 
 
 
+import com.querydsl.jpa.impl.JPAQuery;
+import com.querydsl.jpa.impl.JPAQueryFactory;
+
 import javax.persistence.*;
-import javax.persistence.criteria.*;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 public class DoubleTest {
     static EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
     public static void main(String[] args) throws Exception {
-        EntityManager em1 = emf.createEntityManager();
-        EntityTransaction tx1 = em1.getTransaction();
+        EntityManager em = emf.createEntityManager();
+        JPAQueryFactory queryFactory = new JPAQueryFactory(em);
+        QMember qMember = new QMember("m");
+        List<Member> list = queryFactory.selectFrom(qMember).fetch();
+        for(Member member : list) System.out.println(member.getUsername());
+        //query.fetch();
+        /*List<Member> members =  query.from(qMember)
+                                .where(qMember.username.eq("최성훈"))
+                                .orderBy(qMember.username.desc())*/
 
-        tx1.begin();
+
+        //EntityTransaction tx = em.getTransaction();
+        //tx1.begin();
+/*        JPAQuery query = new JPAQuery(em1);*/
+/*        QMember qMember = new QMember("m");*/
+/*        CriteriaBuilder cb = em1.getCriteriaBuilder();
+        CriteriaQuery<Member> query = cb.createQuery(Member.class);
+        Root<Member> root = query.from(Member.class);
+        query.select(root);
+        query.where(cb.equal(root.get("username"),cb.parameter(String.class,"username")));
+        List<Member> list = em1.createQuery(query).setParameter("username","최성훈").getResultList();
+        for(Member member : list) System.out.println(member.getUsername());*/
+/*        Root<Member> root = query.from(Member.class);
+
+        Subquery<Double> subQuery = query.subquery(Double.class);
+        Root<Member> root2 = subQuery.from(Member.class);
+        subQuery.select(cb.avg(root2.get("age")));
+
+        query.where(cb.ge(root.get("age"),subQuery));
+        List<Member> list = em1.createQuery(query).getResultList();
+        for(Member member : list ) System.out.println(member.getUsername());*/
+/*        CriteriaQuery<Object[]> query = cb.createQuery(Object[].class);
+        Root<Member> root = query.from(Member.class);
+        Join<Member,Team> team = root.join("team");
+        query.where(cb.equal(team.get("name"),"LG"));
+        query.multiselect(root,team);
+        List<Object[]> list = em1.createQuery(query).getResultList();
+        for(Object[] obj : list){
+            Member member = (Member)obj[0];
+            Team t = (Team)obj[1];
+            System.out.println(member.getUsername()+" "+t.getName());
+        }*/
+/*        CriteriaQuery<Object[]> query = cb.createQuery(Object[].class);
+        Root<Member> root = query.from(Member.class);
+        query.multiselect(
+            root.get("team").get("name"),
+            cb.max(root.get("age")),
+            cb.min(root.get("age"))
+        );
+        query.groupBy(root.get("team").get("name"));
+        List<Object[]> list = em1.createQuery(query).getResultList();
+        for(Object[] obj : list) System.out.println((String)obj[0]+" "+(int)obj[1]+" "+(int)obj[2]);*/
+        //CriteriaQuery<Object[]> query = cb.createQuery(Object[].class);
+/*        CriteriaQuery<Tuple> query = cb.createTupleQuery();
+        Root<Member> root = query.from(Member.class);
+        query.multiselect(
+                root.get("age").alias("age"),
+                root.get("username").alias("username")
+        ).distinct(true);
+        query.where(cb.gt(root.get("age"),30));
+        query.orderBy(cb.desc(root.get("age")));
+        List<Tuple> list = em1.createQuery(query).getResultList();
+        for(Tuple tuple : list){
+            int age = tuple.get("age",Integer.class);
+            String userName = tuple.get("username",String.class);
+            System.out.println(age+" "+userName);
+        }*/
+        //List<Object[]> list = em1.createQuery(query).getResultList();
+        //for(Object[] obj : list) System.out.println((int)obj[0]+" "+(String)obj[1]);
+/*        query.where(cb.equal(root.get("username"),"최성훈"));
+        query.orderBy(cb.desc(root.get("age")));*/
+/*
         Integer age = null;
         String username = null;
         String teamName = "SKT";
@@ -33,6 +101,7 @@ public class DoubleTest {
         if(teamName!=null) query.setParameter("teamName",teamName);
         List<Member> list = query.getResultList();
         for(Member member : list) System.out.println(member.getUsername());
+*/
 
 
 /*        Integer age = null;
@@ -376,8 +445,8 @@ public class DoubleTest {
         movie.setDirector("최성훈");
         movie.setActor("최성훈");
         em1.persist(movie);*/
-        tx1.commit();
-        em1.close();
+        //tx1.commit();
+        //em1.close();
 /*        Member member = new Member();
         member.setName("최성훈");
         em1.persist(member);
