@@ -1,7 +1,7 @@
 package jpabook.start;
 
 
-
+import com.querydsl.core.QueryModifiers;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
@@ -12,10 +12,38 @@ public class DoubleTest {
     static EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
     public static void main(String[] args) throws Exception {
         EntityManager em = emf.createEntityManager();
-        JPAQueryFactory queryFactory = new JPAQueryFactory(em);
-        QMember qMember = new QMember("m");
+        JPAQueryFactory query = new JPAQueryFactory(em);
+/*        QOrder qOrder = QOrder.order;
+        QMember qMember = QMember.member;
+        QProduct qProduct = QProduct.product;
+        List<Order> list = query.selectFrom(qOrder)
+                        .join(qOrder.member,qMember)
+                        .leftJoin(qOrder.product,qProduct)
+                        .on(qOrder.product.price.gt(1000000))
+                        .on(qOrder.id.eq(3L))
+                        .fetch();
+        for(Order order : list ) System.out.println(order.getProduct().getId());*/
+        //QProduct qProduct = new QProduct("p");
+        //QueryModifiers queryModifiers = new QueryModifiers(20L,1L);
+/*        List<Product> list = query
+            .select(qProduct)
+            .from(qProduct)
+            .groupBy(qProduct.name)
+            .having(qProduct.price.gt(10000))
+            .fetch();*/
+            //.where(qProduct.price.gt(20000))
+            //.orderBy(qProduct.price.desc(),qProduct.stockAmount.asc())
+            //.restrict(queryModifiers)
+            //.offset(0).limit(20)
+        //for(Product product : list) System.out.println(product.getName());
+/*        QProduct product = QProduct.product;
+        List<Product> list =queryFactory.selectFrom(product)
+                .where(product.name.eq("치즈").and(product.price.gt(500)).and(product.price.between(10,5000))).fetch();
+        for(Product pro : list) System.out.println(pro.getName());*/
+        //QMember qMember = new QMember("m"); // 같은 테이블을 다른 개체로 봐야 하는 경우 이렇게 생성함
+/*        QMember qMember = QMember.member; // 하나의 개체만 사용하는 경우 이런식으로 기본 인스턴스 사용 가능함
         List<Member> list = queryFactory.selectFrom(qMember).fetch();
-        for(Member member : list) System.out.println(member.getUsername());
+        for(Member member : list) System.out.println(member.getUsername());*/
         //query.fetch();
         /*List<Member> members =  query.from(qMember)
                                 .where(qMember.username.eq("최성훈"))
