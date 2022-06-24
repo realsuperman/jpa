@@ -4,6 +4,18 @@ package jpabook.start;
 import javax.persistence.*;
 
 @Entity
+/*@SqlResultSetMapping(name="OrderResults",
+    entities = {
+        @EntityResult(entityClass = Order.class,fields = {
+                @FieldResult(name="id",column="order_id"),
+                @FieldResult(name="quantity",column = "order_quantity"),
+                @FieldResult(name=" ",column="order_item")
+        })
+    },
+    columns = {
+        @ColumnResult(name="item_name")
+    }
+)*/
 @Table(name="ORDERS")
 public class Order {
     @Id @GeneratedValue

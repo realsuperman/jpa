@@ -8,7 +8,7 @@ import java.util.List;
         name="Member.findByUsername",
         query="select m from Member m where m.username=:username"
 )*/
-@NamedQueries({ // 정적쿼리 여러개 선언
+/*@NamedQueries({ // 정적쿼리 여러개 선언
         @NamedQuery( // 정적쿼리 선언
                 name = "Member.findByUsername",
                 query = "select m from Member m where m.username=:username"
@@ -17,7 +17,16 @@ import java.util.List;
                 name = "Member.findByUsername2",
                 query = "select m from Member m where m.username=:username"
         )
-})
+})*/
+/*
+@SqlResultSetMapping(name="memberWithOrderCount",
+entities = {@EntityResult(entityClass = Member.class)},
+columns = {@ColumnResult(name="ORDER_COUNT")})
+*/
+@NamedNativeQuery(
+    name = "memberSQL",
+    query = "SELECT ID FROM MEMBER WHERE AGE>?"
+)
 public class Member {
     @Id @GeneratedValue
     private Long id;

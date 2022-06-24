@@ -1,23 +1,98 @@
 package jpabook.start;
 
 
+import antlr.StringUtils;
+import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.QueryModifiers;
+import com.querydsl.core.Tuple;
+import com.querydsl.core.types.Projections;
+import com.querydsl.core.types.dsl.BooleanExpression;
+import com.querydsl.jpa.JPAExpressions;
+import com.querydsl.jpa.impl.JPADeleteClause;
 import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
+import com.querydsl.jpa.impl.JPAUpdateClause;
+import org.h2.engine.User;
 
 import javax.persistence.*;
+import java.math.BigInteger;
 import java.util.List;
 
 public class DoubleTest {
     static EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
+    private static BooleanExpression nameEq(QMember member,String name){
+        return name != null? member.username.eq(name) : null;
+    }
     public static void main(String[] args) throws Exception {
         EntityManager em = emf.createEntityManager();
-        JPAQueryFactory query = new JPAQueryFactory(em);
+        EntityTransaction tx = em.getTransaction();
+        List<Object[]> list = em.createNativeQuery("memberSQL").getResultList();
+        //List<Member> nativeQuery = em.createNativeQuery("Member.memberSQL",Member.class).setParameter(1,20).getResultList();
+        //for(Member member : nativeQuery) System.out.println(member.getUsername());
+        //Query query = em.createNativeQuery("SELECT o.id AS order_id, o.quantity AS order_quantity, o.item AS order_item, i.name AS item_name FROM Order o,Item i WHERE (order_quantity>25) AND (order_item=i.id)","OrderResults");
+
+/*        String sql = "SELECT M.ID, AGE, NAME, TEAM_ID, I.ORDER_COUNT "+
+                "FROM MEMBER M "+
+                "LEFT JOIN "+
+                " (SELECT IM.ID, COUNT(*) AS ORDER_COUNT "+
+                " FROM ORDERS O, MEMBER IM "+
+                " WHERE O.MEMBER_ID = IM.ID GROUP BY IM.ID) I "+
+                "ON M.ID=I.ID";
+        Query nativeQuery = em.createNativeQuery(sql,"memberWithOrderCount");
+        List<Object[] > list = nativeQuery.getResultList();
+        for(Object[] row : list){
+            Member member = (Member) row[0];
+            BigInteger orderCount = (BigInteger)row[1];
+            System.out.println("member = "+member);
+            System.out.println("orderCount = "+orderCount);
+        }*/
+/*        String sql = "SELECT ID,AGE,NAME,TEAM_ID FROM MEMBER WHERE AGE>? AND NAME LIKE '%?%'";
+        List<Member> list  = em.createNativeQuery(sql,Member.class)
+                .setParameter(1,20)
+                .setParameter(2,"최")
+                .getResultList();
+        for(Member member : list) System.out.println(member.getUsername());*/
+/*        JPAQueryFactory query = new JPAQueryFactory(em);
+        QMember member = QMember.member;
+        String name = "최성훈";
+        List<Member> list = query.selectFrom(member).where(nameEq(member,name)).fetch();
+        for(Member mem : list) System.out.println(mem.getUsername());*/
+        //query.selectFrom(member).where()
+        //QProduct product = QProduct.product;
+        //JPAUpdateClause updateClause = new JPAUpdateClause(em,product);
+        //JPADeleteClause deleteClause = new JPADeleteClause(em,product);
+
+        //tx.begin();
+        //deleteClause.where(product.name.eq("치즈2")).execute();
+        //long count = updateClause.where(product.name.eq("치즈")).set(product.price,10000).execute();
+        //tx.commit();
+        /*List<ItemDTO> list = query.from(product).
+                fetch(Projections.constructor(ItemDTO.class,product.name.as("username"),product.price));
+*/        //QProduct product = QProduct.product;
+        //QMember member = QMember.member;
+        //List<Tuple> list = query.select(member.username, member.age).from(member).fetch();
+        /*for(Tuple tuple : list){
+            int price = tuple.get(Product.price);
+            String name = tuple.get(Product.name);
+            System.out.println(name+" "+price);
+        }*/
+/*        QProduct qProduct2 = new QProduct("product");
+        List<Product> list = query.selectFrom(qProduct1)
+                .where(qProduct1.in(
+                        JPAExpressions.selectFrom(qProduct2).where(qProduct2.name.eq("족발대"))
+                ))*/
+                /*.where(qProduct1.price.eq(
+                JPAExpressions.select(qProduct2.price.max()).from(qProduct2)
+        ))*/
+        //.fetch();
+/*        QOrder order = QOrder.order;
+        QMember member = QMember.member;
+        List<Order> list = query.select(order).from(order,member).where(order.member.eq(member)).fetch();*/
 /*        QOrder qOrder = QOrder.order;
         QMember qMember = QMember.member;
         QProduct qProduct = QProduct.product;
         List<Order> list = query.selectFrom(qOrder)
-                        .join(qOrder.member,qMember)
+                        .join(qOrder.member,qMember).fetchJoin()
                         .leftJoin(qOrder.product,qProduct)
                         .on(qOrder.product.price.gt(1000000))
                         .on(qOrder.id.eq(3L))
