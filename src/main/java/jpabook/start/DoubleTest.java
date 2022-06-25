@@ -26,7 +26,33 @@ public class DoubleTest {
     public static void main(String[] args) throws Exception {
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
-        List<Object[]> list = em.createNativeQuery("memberSQL").getResultList();
+
+/*        em.setFlushMode(FlushModeType.COMMIT);
+        tx.begin();
+        Product proudct1 = em.find(Product.class,1L);
+        proudct1.setPrice(1200);
+        //em.flush();
+        Product product2 = em.createQuery("SELECT p FROM Product p WHERE p.price=1200",Product.class).setFlushMode(FlushModeType.AUTO).getSingleResult();
+        System.out.println(product2.getName());
+        tx.commit();*/
+/*        Product productA = em.createQuery("select p from Product p where p.name=:name",Product.class).setParameter("name","치즈").getSingleResult();
+        System.out.println("치즈 수정전 = "+productA.getPrice());
+        tx.begin();
+        em.createQuery("update Product p set p.price=p.price*1.1").executeUpdate();
+        tx.commit();
+        em.refresh(productA);
+        System.out.println("치즈 수정후 = "+productA.getPrice());*/
+        /*
+           String sql = "update Product p set p.price=p.price*1.1 where p.stockAmount<:stockAmount";
+        tx.begin();
+        em.createQuery(sql).setParameter("stockAmount",1100).executeUpdate();
+        tx.commit();*/
+        //List<Object[] >list = em.createNamedQuery("Member.memberWithOrderCount").getResultList();
+        //System.out.println(list.size());
+/*
+        List<Member> list  = em.createNamedQuery("memberSQL").setParameter(1,20).getResultList();
+*/
+        //em.createNativeQuery("memberSQL").setParameter(1,10);
         //List<Member> nativeQuery = em.createNativeQuery("Member.memberSQL",Member.class).setParameter(1,20).getResultList();
         //for(Member member : nativeQuery) System.out.println(member.getUsername());
         //Query query = em.createNativeQuery("SELECT o.id AS order_id, o.quantity AS order_quantity, o.item AS order_item, i.name AS item_name FROM Order o,Item i WHERE (order_quantity>25) AND (order_item=i.id)","OrderResults");

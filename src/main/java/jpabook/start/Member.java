@@ -23,10 +23,22 @@ import java.util.List;
 entities = {@EntityResult(entityClass = Member.class)},
 columns = {@ColumnResult(name="ORDER_COUNT")})
 */
-@NamedNativeQuery(
+/*@NamedNativeQuery(
     name = "memberSQL",
     query = "SELECT ID FROM MEMBER WHERE AGE>?"
-)
+)*/
+/*@SqlResultSetMapping(name="memberWithOrderCount",
+entities = {@EntityResult(entityClass = Member.class)},
+columns = {@ColumnResult(name="ORDER_COUNT")})
+@NamedNativeQuery(name="Member.memberWithOrderCount",
+query="SELECT M.ID, AGE, NAME, TEAM_ID, I.ORDER_COUNT \"+\n" +
+        "                \"FROM MEMBER M \"+\n" +
+        "                \"LEFT JOIN \"+\n" +
+        "                \" (SELECT IM.ID, COUNT(*) AS ORDER_COUNT \"+\n" +
+        "                \" FROM ORDERS O, MEMBER IM \"+\n" +
+        "                \" WHERE O.MEMBER_ID = IM.ID GROUP BY IM.ID) I \"+\n" +
+        "                \"ON M.ID=I.ID",
+resultSetMapping = "memberWithOrderCount")*/
 public class Member {
     @Id @GeneratedValue
     private Long id;
