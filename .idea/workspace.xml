@@ -1,136 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dc441f2-3443-487f-a71a-393afcc065a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ch11_jpa_shop_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ch11_jpa_shop_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_javax_servlet_jsp_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_7_0_57.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_7_0_57.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch11-jpa-shop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_187.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysema_commons_mysema_commons_lang_0_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_querydsl_codegen_utils_5_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_querydsl_querydsl_apt_5_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_querydsl_querydsl_codegen_5_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_querydsl_querydsl_core_5_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_querydsl_querydsl_jpa_5_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_108.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_26_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_10_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_10_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch02-jpa-start1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/member.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/DoubleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/ItemDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/UserDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Album.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Board.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/BoardDetail.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Child.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Child3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Child4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Child5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/ChildEntity1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/ChildEntity2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/ChildId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/ChildId2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Common.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Common2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/GrandChild.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/GrandChildId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Parent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Parent2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Parent3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Parent4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Parent5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/ParentId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/ParentId2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220603/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220604/Board.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220604/Child.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220604/Parent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220615/Child.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220615/Member2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220615/Parent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220615/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220616/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220616/PhoneNumber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220616/PhoneServiceProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220616/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220616/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220616/Zipcode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220617/Address2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220617/AddressEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220617/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/20220617/Member2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/Album.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/Delivery.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/DeliveryStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/Movie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/OrderItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/OrderStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/domain/RoleType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="2dc441f2-3443-487f-a71a-393afcc065a4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -147,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="248">
+              <caret line="121" column="6" lean-forward="true" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -178,6 +49,7 @@
       <find>impl</find>
       <find>tran</find>
       <find>Member.findByUsername</find>
+      <find>tomcat7-</find>
     </findStrings>
     <replaceStrings>
       <replace>Member2</replace>
@@ -255,25 +127,15 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ch02-jpa-start1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ch02-jpa-start1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ch02-jpa-start1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="jpa-shop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="783" />
-    <option name="y" value="49" />
+    <option name="x" value="-23" />
+    <option name="y" value="8" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -311,6 +173,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch02-jpa-start1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ch02-jpa-start1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch02-jpa-start1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ch02-jpa-start1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+              <item name="jpashop" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -501,7 +380,7 @@
       <workItem from="1656061965011" duration="8390000" />
       <workItem from="1656144246078" duration="5886000" />
       <workItem from="1656151880237" duration="39000" />
-      <workItem from="1656152007668" duration="186000" />
+      <workItem from="1656152007668" duration="619000" />
     </task>
     <task id="LOCAL-00001" summary="jpa 프로젝트 주석 추가함">
       <created>1654520628984</created>
@@ -647,7 +526,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140387000" />
+    <option name="totallyTimeSpent" value="140820000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -659,7 +538,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Web" side_tool="true" />
@@ -689,7 +568,7 @@
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.5109409" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.510661" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -1135,8 +1014,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="248">
+          <caret line="121" column="6" lean-forward="true" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
         </state>
       </provider>
     </entry>
