@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ch11-jpa-shop" />
         <module name="ch02-jpa-start1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ch02-jpa-start1" target="9" />
+      <module name="ch11-jpa-shop" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
