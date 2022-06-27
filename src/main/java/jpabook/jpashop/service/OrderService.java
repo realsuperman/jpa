@@ -1,11 +1,7 @@
 package jpabook.jpashop.service;
 
-import jpabook.jpashop.domain.Delivery;
-import jpabook.jpashop.domain.Member;
-import jpabook.jpashop.domain.Order;
-import jpabook.jpashop.domain.OrderItem;
+import jpabook.jpashop.domain.*;
 import jpabook.jpashop.domain.item.Item;
-import jpabook.jpashop.domain.OrderSearch;
 import jpabook.jpashop.repository.MemberRepository;
 import jpabook.jpashop.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +22,9 @@ public class OrderService {
     @Autowired OrderRepository orderRepository;
     @Autowired ItemService itemService;
 
-    /** 주문 */
+    /**
+     * 주문
+     */
     public Long order(Long memberId, Long itemId, int count) {
 
         //엔티티 조회
@@ -46,7 +44,9 @@ public class OrderService {
     }
 
 
-    /** 주문 취소 */
+    /**
+     * 주문 취소
+     */
     public void cancelOrder(Long orderId) {
 
         //주문 엔티티 조회
@@ -56,9 +56,12 @@ public class OrderService {
         order.cancel();
     }
 
-    /** 주문 검색 */
+    /**
+     * 주문 검색
+     */
     public List<Order> findOrders(OrderSearch orderSearch) {
-        return orderRepository.findAll(orderSearch);
+    	return orderRepository.findAll(orderSearch.toSpecification()); // Specification 사용
+    	//return orderRepository.search(orderSearch);  //QueryDSL 사용
     }
 
 }

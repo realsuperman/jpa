@@ -13,7 +13,7 @@ import java.util.List;
  * Date: 2013. 12. 3. Time: 오전 1:07
  */
 @Service
-@Transactional // 기본적으로 해당 어노테이션은 런타임 예외(자식들인 언체크)예외만 롤백한다 체크 예외가 발생해도 롤백하고 싶다면 rollbackkFor=Exceptionclass처럼 롤백할 예외를 지정해야 한다
+@Transactional
 public class MemberService {
 
     @Autowired
@@ -43,7 +43,4 @@ public class MemberService {
         return memberRepository.findAll();
     }
 
-    public Member findOne(Long memberId) {
-        return memberRepository.findOne(memberId);
-    }
 }

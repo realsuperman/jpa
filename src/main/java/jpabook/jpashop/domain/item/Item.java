@@ -28,12 +28,12 @@ public abstract class Item {
     private List<Category> categories = new ArrayList<Category>();
 
     //==Biz Method==//
-    public void addStock(int quantity) {
-        this.stockQuantity += quantity;
+    public void addStock(int orderQuantity) {
+        this.stockQuantity += orderQuantity;
     }
 
-    public void removeStock(int quantity) {
-        int restStock = this.stockQuantity - quantity;
+    public void removeStock(int orderQuantity) {
+        int restStock = this.stockQuantity - orderQuantity;
         if (restStock < 0) {
             throw new NotEnoughStockException("need more stock");
         }

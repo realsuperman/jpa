@@ -8,9 +8,6 @@
     <jsp:include page="../fragments/bodyHeader.jsp" />
 
     <form role="form" method="post">
-        <!-- id -->
-        <input type="hidden" name="id" value="${item.id}">
-
         <div class="form-group">
             <label for="name">상품명</label>
             <input type="text" name="name" class="form-control" id="name" placeholder="이름을 입력하세요" value="${item.name}">

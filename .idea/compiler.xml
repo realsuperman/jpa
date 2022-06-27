@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ch11-jpa-shop" />
+        <module name="ch12-springdata-shop" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ch12-springdata-shop" target="1.6" />
+    </bytecodeTargetLevel>
   </component>
 </project>

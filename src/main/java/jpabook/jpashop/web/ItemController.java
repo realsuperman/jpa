@@ -6,10 +6,9 @@ import jpabook.jpashop.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.support.SessionStatus;
 
 import java.util.List;
 
@@ -18,9 +17,15 @@ import java.util.List;
  * Date: 2013. 12. 4. Time: 오후 9:07
  */
 @Controller
+@SessionAttributes("item")
 public class ItemController {
 
     @Autowired ItemService itemService;
+
+    @InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields("id");
+    }
 
     @RequestMapping(value = "/items/new", method = RequestMethod.GET)
     public String createForm() {
@@ -49,9 +54,10 @@ public class ItemController {
      * 상품 수정
      */
     @RequestMapping(value = "/items/{itemId}/edit", method = RequestMethod.POST)
-    public String updateItem(@ModelAttribute("item") Book item) {
+    public String updateItem(@ModelAttribute("item") Book item, SessionStatus status) {
 
         itemService.saveItem(item);
+        status.setComplete();
         return "redirect:/items";
     }
 
