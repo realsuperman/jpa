@@ -1,6 +1,6 @@
 package jpabook.jpashop.repository.custom;
 
-import com.mysema.query.jpa.JPQLQuery;
+import com.querydsl.jpa.JPQLQuery;
 import jpabook.jpashop.domain.Order;
 import jpabook.jpashop.domain.OrderSearch;
 import jpabook.jpashop.domain.QMember;
@@ -25,7 +25,7 @@ public class OrderRepositoryImpl extends QueryDslRepositorySupport implements Cu
         QOrder order = QOrder.order;
         QMember member = QMember.member;
 
-        JPQLQuery query = from(order);
+        /*JPQLQuery query = from(order);
 
         if (StringUtils.hasText(orderSearch.getMemberName())) {
             query.leftJoin(order.member, member)
@@ -36,6 +36,7 @@ public class OrderRepositoryImpl extends QueryDslRepositorySupport implements Cu
             query.where(order.status.eq(orderSearch.getOrderStatus()));
         }
 
-        return query.list(order);
+        return query.list(order);*/
+        return null;
     }
 }

@@ -19,13 +19,13 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<!-- 스프링 데이터 JPA 버전 -->
-		<spring-data-jpa.version>1.8.0.RELEASE</spring-data-jpa.version>
+		<spring-data-jpa.version>1.10.2.RELEASE</spring-data-jpa.version>
 
 		<!-- QueryDSL -->
 		<querydsl.version>3.6.3</querydsl.version>
 
 		<!-- 스프링 프레임워크 버전 -->
-		<spring-framework.version>4.1.6.RELEASE</spring-framework.version>
+		<spring-framework.version>4.3.2.RELEASE</spring-framework.version>
 		<!-- JPA, 하이버네이트 버전 -->
 		<hibernate.version>4.3.10.Final</hibernate.version>
 		<!-- 데이터베이스 버전 -->
@@ -54,16 +54,16 @@
 
 		<!-- QueryDSL -->
 		<dependency>
-			<groupId>com.mysema.querydsl</groupId>
+			<groupId>com.querydsl</groupId>
 			<artifactId>querydsl-apt</artifactId>
-			<version>${querydsl.version}</version>
+			<version>RELEASE</version>
 			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
-			<groupId>com.mysema.querydsl</groupId>
+			<groupId>com.querydsl</groupId>
 			<artifactId>querydsl-jpa</artifactId>
-			<version>${querydsl.version}</version>
+			<version>RELEASE</version>
 		</dependency>
 
 		<!-- 스프링 MVC -->
@@ -143,6 +143,11 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>javax.annotation-api</artifactId>
+			<version>1.3.2</version>
+		</dependency>
 
 	</dependencies>
 
@@ -217,7 +222,7 @@
 						</goals>
 						<configuration>
 							<outputDirectory>target/generated-sources/java</outputDirectory>
-							<processor>com.mysema.query.apt.jpa.JPAAnnotationProcessor</processor>
+							<processor>com.querydsl.apt.jpa.JPAAnnotationProcessor</processor>
 						</configuration>
 					</execution>
 				</executions>
