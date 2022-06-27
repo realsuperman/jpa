@@ -14,7 +14,7 @@ import java.util.List;
 @Repository
 public class MemberRepository {
 
-    @PersistenceContext
+    @PersistenceContext // 스프링에서는 엔티티팩토리에서 생성해서 하는 개념이 아니다 해당 어노테이션을 붙여주면 알아서 엔티티매니져를 설정해준다(엔티티 매니저 주입)
     EntityManager em;
 
     public void save(Member member) {
@@ -36,3 +36,8 @@ public class MemberRepository {
                 .getResultList();
     }
 }
+
+/* 참고로 엔티티 매니저 팩토리를 주입받으려면 아래와 같이 코드를 작성하면 된다
+   @PersistenceUnit
+   EntityManagerFactory emf;
+ */

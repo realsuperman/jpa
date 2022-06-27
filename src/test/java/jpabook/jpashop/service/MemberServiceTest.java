@@ -11,8 +11,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import static org.junit.Assert.*;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:appConfig.xml")
+@RunWith(SpringJUnit4ClassRunner.class) // 테스트 케이스를 스프링 프레임워크와 통합하기 위한 설정이다(이렇게 하면 스프링 프레임워크가 제공하는 Autowired같은 기능 사용 가능)
+@ContextConfiguration(locations = "classpath:appConfig.xml") // 테스트 케이스를 실행할 때 사용할 스프링 설정 정보 지정
 @Transactional
 public class MemberServiceTest {
 

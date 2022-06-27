@@ -20,7 +20,7 @@ public class MockCreateService {
     @Autowired ItemService itemService;
     @Autowired OrderService orderService;
 
-    @PostConstruct
+    //@PostConstruct
     public void initCreateMock() {
 
         Member member = new Member();
