@@ -21,6 +21,11 @@
         <bean class="org.springframework.orm.jpa.support.OpenEntityManagerInViewInterceptor">
             <property name="entityManagerFactory" ref="entityManagerFactory" />
         </bean>
+        <bean class="org.springframework.data.web.config.SpringDataJacksonConfiguration">
+            <!-- 해당 설정은 도메인 클래스 컨버터 기능으로 기존에 컨트롤러에서 파라미터로 넘어온 값을 통해 개체를 조회하는 개념이 아니라
+                중간에 도메인 클래스 컨버터가 동작해서 아이디를 개체로 변환하는 메커니즘 자세한건 MemberController의 memberUpdateForm 참고
+            -->
+        </bean>
     </mvc:interceptors>
 
 </beans>

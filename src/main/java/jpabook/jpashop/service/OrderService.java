@@ -10,6 +10,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+import static jpabook.jpashop.domain.OrderSpec.memberNameLike;
+import static jpabook.jpashop.domain.OrderSpec.orderStatusEq;
+import static org.springframework.data.jpa.domain.Specifications.where;
+
 /**
  * Created by holyeye on 2014. 3. 12..
  */
@@ -63,5 +67,9 @@ public class OrderService {
     	return orderRepository.findAll(orderSearch.toSpecification()); // Specification 사용
     	//return orderRepository.search(orderSearch);  //QueryDSL 사용
     }
+
+    /*public List<Order> findOrders(String name){
+        List<Order> result = orderRepository.findAll(where(memberNameLike(name)).and(orderStatusEq(OrderStatus.ORDER)));
+    }*/
 
 }

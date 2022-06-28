@@ -10,5 +10,4 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
  * Date: 2013. 12. 3. Time: 오후 10:28
  */
 public interface OrderRepository extends JpaRepository<Order, Long>, JpaSpecificationExecutor<Order>, CustomOrderRepository {
-
 }

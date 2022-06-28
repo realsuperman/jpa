@@ -5,9 +5,14 @@ import jpabook.jpashop.repository.MemberRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -49,6 +54,15 @@ public class MemberServiceTest {
 
         //Then
         fail("예외가 발생해야 한다.");
+    }
+
+    @Test
+    public void test(){
+        PageRequest pageRequest = new PageRequest(0,10,new Sort(Sort.Direction.DESC,"name"));
+        Page<Member> result = memberRepository.findByNameStartingWith("김",pageRequest);
+        List<Member> members = result.getContent();
+        int totalPages = result.getTotalPages();
+        boolean hasNextPage = result.hasNext();
     }
 
 
