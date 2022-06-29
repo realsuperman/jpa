@@ -1,30 +1,25 @@
-package domain;
+package jpabook.start;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
-public class Member extends BaseEntity{
+public class Delivery {
     @Id @GeneratedValue
-    @Column(name="MEMBER_ID")
+    @Column(name="DELIVERY_ID")
     private Long id;
-    private String name;
+
+    @OneToOne(mappedBy = "delivery")
+    private Order order;
+
 /*    private String city;
     private String street;
     private String zipCode;*/
+
     @Embedded
     private Address address;
-    @OneToMany(mappedBy = "member")
-    private List<Order> orders = new ArrayList<Order>();
 
-    public List<Order> getOrders() {
-        return orders;
-    }
-
-    public void setOrders(List<Order> orders) {
-        this.orders = orders;
-    }
+    @Enumerated(EnumType.STRING)
+    private DeliveryStatus status;
 
     public Long getId() {
         return id;
@@ -34,12 +29,12 @@ public class Member extends BaseEntity{
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public Order getOrder() {
+        return order;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
     public Address getAddress() {
@@ -49,8 +44,8 @@ public class Member extends BaseEntity{
     public void setAddress(Address address) {
         this.address = address;
     }
-
-/*    public String getCity() {
+/*
+    public String getCity() {
         return city;
     }
 
@@ -72,5 +67,14 @@ public class Member extends BaseEntity{
 
     public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
-    }*/
+    }
+*/
+
+    public DeliveryStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(DeliveryStatus status) {
+        this.status = status;
+    }
 }

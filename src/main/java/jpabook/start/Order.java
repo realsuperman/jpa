@@ -1,39 +1,65 @@
 package jpabook.start;
 
-
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 @Entity
-/*@SqlResultSetMapping(name="OrderResults",
-    entities = {
-        @EntityResult(entityClass = Order.class,fields = {
-                @FieldResult(name="id",column="order_id"),
-                @FieldResult(name="quantity",column = "order_quantity"),
-                @FieldResult(name=" ",column="order_item")
-        })
-    },
-    columns = {
-        @ColumnResult(name="item_name")
-    }
-)*/
 @Table(name="ORDERS")
-public class Order {
+public class Order extends BaseEntity{
     @Id @GeneratedValue
+    @Column(name="ORDER_ID")
     private Long id;
-    private int orderAmount;
-    @Embedded
-    private Address address;
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Member member;
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Product product;
 
-    public Product getProduct() {
-        return product;
+    @ManyToOne(fetch=FetchType.EAGER)
+    @JoinColumn(name="MEMBER_ID")
+    private Member member;
+
+    @OneToMany(mappedBy = "order",cascade = CascadeType.ALL)
+    private List<OrderItem> orderItems = new ArrayList<>();
+
+    @OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @JoinColumn(name="DELIVERY_ID")
+    private Delivery delivery;
+
+    @Temporal(TemporalType.TIMESTAMP) // 참고로 기본값이 TIMESTAMP이므로 생략해도 된다
+    private Date orderDate;
+
+    @Enumerated(EnumType.STRING)
+    private OrderStatus status;
+
+    public Delivery getDelivery() {
+        return delivery;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    public void setDelivery(Delivery delivery) {
+        this.delivery = delivery;
+        delivery.setOrder(this);
+    }
+
+    public void addOrderItem(OrderItem orderItem){
+        orderItems.add(orderItem);
+        orderItem.setOrder(this);
+    }
+    public Member getMember() {
+        return member;
+    }
+
+    public void setMember(Member member) {
+        if(this.member!=null){
+            this.member.getOrders().remove(this);
+        }
+        this.member=member;
+        member.getOrders().add(this);
+    }
+
+    public List<OrderItem> getOrderItems() {
+        return orderItems;
+    }
+
+    public void setOrderItems(List<OrderItem> orderItems) {
+        this.orderItems = orderItems;
     }
 
     public Long getId() {
@@ -44,27 +70,20 @@ public class Order {
         this.id = id;
     }
 
-    public int getOrderAmount() {
-        return orderAmount;
+
+    public Date getOrderDate() {
+        return orderDate;
     }
 
-    public void setOrderAmount(int orderAmount) {
-        this.orderAmount = orderAmount;
+    public void setOrderDate(Date orderDate) {
+        this.orderDate = orderDate;
     }
 
-    public Address getAddress() {
-        return address;
+    public OrderStatus getStatus() {
+        return status;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
-    }
-
-    public Member getMember() {
-        return member;
-    }
-
-    public void setMember(Member member) {
-        this.member = member;
+    public void setStatus(OrderStatus status) {
+        this.status = status;
     }
 }

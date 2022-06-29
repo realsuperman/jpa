@@ -1,4 +1,4 @@
-package domain;
+package jpabook.start;
 
 import javax.persistence.MappedSuperclass;
 import java.util.Date;

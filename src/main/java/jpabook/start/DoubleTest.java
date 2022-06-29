@@ -20,12 +20,11 @@ import java.util.List;
 
 public class DoubleTest {
     static EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
-    private static BooleanExpression nameEq(QMember member,String name){
-        return name != null? member.username.eq(name) : null;
-    }
     public static void main(String[] args) throws Exception {
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
+        //Order order = em.find(Order.class,1L);
+        List<Order> order = em.createQuery("select o from Order o",Order.class).getResultList();
 
 /*        em.setFlushMode(FlushModeType.COMMIT);
         tx.begin();

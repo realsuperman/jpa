@@ -1,4 +1,4 @@
-package domain;
+package jpabook.start;
 
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
