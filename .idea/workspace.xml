@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dc441f2-3443-487f-a71a-393afcc065a4" name="Default Changelist" comment="">
+    <list default="true" id="ce081c76-0d9f-41b0-a13e-48105b080562" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/Repository1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/Repository2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/service/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/web/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/DoubleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/start/DoubleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/start/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/ItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/custom/OrderRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/custom/OrderRepositoryImpl.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +22,29 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+              <folding>
+                <element signature="e#570#581#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Member.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -29,24 +55,17 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>core</find>
-      <find>Member</find>
-      <find>SoccerMember</find>
-      <find>PRODUCT_ID</find>
-      <find>CATEGORY_ID</find>
-      <find>parentId</find>
-      <find>DiscriminatorColumn</find>
-      <find>extends common</find>
-      <find>mapsid</find>
-      <find>mappedBy</find>
-      <find>single</find>
-      <find>impl</find>
-      <find>tran</find>
-      <find>Member.findByUsername</find>
+      <find>querydsl</find>
+      <find>junit</find>
+      <find>spring-framework</find>
+      <find>findByName</find>
+      <find>spring-data</find>
+      <find>@Con</find>
+      <find>bean</find>
+      <find>spring-data-jpa</find>
+      <find>C:\Users\seong\Desktop\새 폴더\jpa\src\main\java\jpabook\jpashop\service\OrderService.java</find>
+      <find>findOrders</find>
     </findStrings>
-    <replaceStrings>
-      <replace>Member2</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,65 +73,36 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Child3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/ChildId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/GrandChild.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/GrandChildId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Parent4.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Child4.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Child5.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/BoardDetail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/ChildId2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Parent5.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/dummy/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Entity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Board.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Board.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/20220604/Board.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Item.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Album.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Movie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/BaseEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Child.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Parent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/OrderItem.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Addres.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Period.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/PhoneNumber.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Zipcode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/PhoneServiceProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Address2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/AddressEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Member2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Delivery.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Address.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/UserDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Team.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Member_.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/QTeam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/generated-sources/java/jpabook/start/QTeam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/generated-sources/java/jpabook/start/QMember.java" />
-        <option value="$PROJECT_DIR$/src/main/java/generated-sources/java/jpabook/start/QAddress.java" />
-        <option value="$PROJECT_DIR$/src/main/java/generated-sources/java/jpabook/start/QProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/generated-sources/java/jpabook/start/QOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/service/MockCreateService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/ItemDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Member.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/DoubleTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Member.java" />
+        <option value="$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/item/QAlbum.java" />
+        <option value="$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/QAddress.java" />
+        <option value="$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/QCategory.java" />
+        <option value="$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/QDelivery.java" />
+        <option value="$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/QMember.java" />
+        <option value="$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/QOrder.java" />
+        <option value="$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/QOrderItem.java" />
+        <option value="$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/item/QItem.java" />
+        <option value="$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/item/QMovie.java" />
+        <option value="$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/item/QBook.java" />
+        <option value="$PROJECT_DIR$/src/test/java/jpabook/jpashop/service/MemberServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/MemberRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/MemberRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/MemberRepositoryCustom.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/appConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/webAppConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/web/MemberController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/OrderRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/ItemRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/custom/OrderRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/service/MemberService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/web/HelloController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/Repository2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/service/HelloService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/Repository1.java" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -120,28 +110,34 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ch02-jpa-start1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="springdata-shop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ch02-jpa-start1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="springdata-shop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="ch02-jpa-start1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="springdata-shop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springdata-shop" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="tomcat7" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="811" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -150,50 +146,209 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ch02-jpa-start1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ch02-jpa-start1" type="462c0819:PsiDirectoryNode" />
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ch02-jpa-start1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ch02-jpa-start1" type="462c0819:PsiDirectoryNode" />
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ch02-jpa-start1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ch02-jpa-start1" type="462c0819:PsiDirectoryNode" />
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ch02-jpa-start1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ch02-jpa-start1" type="462c0819:PsiDirectoryNode" />
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ch02-jpa-start1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ch02-jpa-start1" type="462c0819:PsiDirectoryNode" />
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+              <item name="jpashop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+              <item name="jpashop" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+              <item name="jpashop" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+              <item name="jpashop" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+              <item name="jpashop" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+              <item name="jpashop" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+              <item name="jpashop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+              <item name="jpashop" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+              <item name="jpashop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ch11-jpa-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jpa" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jpabook" type="462c0819:PsiDirectoryNode" />
+              <item name="jpashop" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/jpabook/start" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -202,33 +357,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\seong\Desktop\ch02-jpa-start1\src\main\java" />
-      <recent name="C:\Users\seong\Desktop\ch02-jpa-start1\src\main\resources\20220617" />
-      <recent name="C:\Users\seong\Desktop\ch02-jpa-start1\src\main\resources\domain" />
-      <recent name="C:\Users\seong\Desktop\ch02-jpa-start1\src\main\java\jpabook\start" />
-      <recent name="C:\Users\seong\Desktop\ch02-jpa-start1\src\main\resources\dummy" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-      <recent name="jpabook.start" />
-      <recent name="test" />
-      <recent name="jpabook.start2" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\seong\Desktop\ch02-jpa-start1\src\main\java\jpabook\start" />
-      <recent name="C:\Users\seong\Desktop\ch02-jpa-start1\src\main\resources\20220617" />
-      <recent name="C:\Users\seong\Desktop\ch02-jpa-start1\src\main\resources\20220616" />
-      <recent name="C:\Users\seong\Desktop\ch02-jpa-start1\src\main\resources\20220615" />
-      <recent name="C:\Users\seong\Desktop\ch02-jpa-start1\src\main\resources\2022-06-04" />
+      <recent name="jpabook.jpashop.repository" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -243,65 +376,60 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DoubleTest">
-    <configuration name="DoubleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jpabook.start.DoubleTest" />
-      <module name="ch02-jpa-start1" />
+  <component name="RunManager" selected="JUnit.MemberServiceTest.test">
+    <configuration name="MemberServiceTest.회원가입" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ch11-jpa-shop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jpabook.start.*" />
+          <option name="PATTERN" value="jpabook.jpashop.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="jpabook.jpashop.service" />
+      <option name="MAIN_CLASS_NAME" value="jpabook.jpashop.service.MemberServiceTest" />
+      <option name="METHOD_NAME" value="회원가입" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JpaMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jpabook.start.JpaMain" />
-      <module name="ch02-jpa-start1" />
+    <configuration name="MemberServiceTest.중복_회원_예외" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ch11-jpa-shop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jpabook.start.*" />
+          <option name="PATTERN" value="jpabook.jpashop.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="jpabook.jpashop.service" />
+      <option name="MAIN_CLASS_NAME" value="jpabook.jpashop.service.MemberServiceTest" />
+      <option name="METHOD_NAME" value="중복_회원_예외" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JpaTestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jpabook.start.JpaTestMain" />
-      <module name="ch02-jpa-start1" />
+    <configuration name="MemberServiceTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ch11-jpa-shop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jpabook.start.*" />
+          <option name="PATTERN" value="jpabook.jpashop.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SoccerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="jpabook.start.SoccerTest" />
-      <module name="ch02-jpa-start1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jpabook.start.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="jpabook.jpashop.service" />
+      <option name="MAIN_CLASS_NAME" value="jpabook.jpashop.service.MemberServiceTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DoubleTest" />
-        <item itemvalue="Application.SoccerTest" />
-        <item itemvalue="Application.JpaMain" />
-        <item itemvalue="Application.JpaTestMain" />
+        <item itemvalue="JUnit.MemberServiceTest.test" />
+        <item itemvalue="JUnit.MemberServiceTest.회원가입" />
+        <item itemvalue="JUnit.MemberServiceTest.중복_회원_예외" />
       </list>
     </recent_temporary>
   </component>
@@ -310,686 +438,416 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2dc441f2-3443-487f-a71a-393afcc065a4" name="Default Changelist" comment="" />
-      <created>1654518738179</created>
+      <changelist id="ce081c76-0d9f-41b0-a13e-48105b080562" name="Default Changelist" comment="" />
+      <created>1656337094272</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1654518738179</updated>
-      <workItem from="1654518740201" duration="1898000" />
-      <workItem from="1654599911907" duration="7000" />
-      <workItem from="1654600003608" duration="3000" />
-      <workItem from="1654600014177" duration="10000" />
-      <workItem from="1654602247371" duration="7148000" />
-      <workItem from="1654657626981" duration="15000" />
-      <workItem from="1654672611508" duration="4486000" />
-      <workItem from="1654682619269" duration="2150000" />
-      <workItem from="1654691814862" duration="598000" />
-      <workItem from="1654695066816" duration="1844000" />
-      <workItem from="1654743969352" duration="596000" />
-      <workItem from="1654758887191" duration="3899000" />
-      <workItem from="1654773601978" duration="4101000" />
-      <workItem from="1654836744715" duration="4971000" />
-      <workItem from="1654844771608" duration="4636000" />
-      <workItem from="1654864660744" duration="41000" />
-      <workItem from="1654917794844" duration="9000" />
-      <workItem from="1654917810543" duration="380000" />
-      <workItem from="1654934863453" duration="3861000" />
-      <workItem from="1654954768600" duration="532000" />
-      <workItem from="1655003430736" duration="593000" />
-      <workItem from="1655008301021" duration="2000" />
-      <workItem from="1655009573172" duration="9129000" />
-      <workItem from="1655117269118" duration="7000" />
-      <workItem from="1655118815710" duration="1000" />
-      <workItem from="1655120820512" duration="7314000" />
-      <workItem from="1655205367719" duration="8000" />
-      <workItem from="1655205573851" duration="1000" />
-      <workItem from="1655205679465" duration="6566000" />
-      <workItem from="1655264133287" duration="129000" />
-      <workItem from="1655278960933" duration="2399000" />
-      <workItem from="1655294468790" duration="3443000" />
-      <workItem from="1655348784768" duration="94000" />
-      <workItem from="1655365709870" duration="4199000" />
-      <workItem from="1655370024566" duration="3414000" />
-      <workItem from="1655388409464" duration="113000" />
-      <workItem from="1655450729758" duration="1407000" />
-      <workItem from="1655452509352" duration="1963000" />
-      <workItem from="1655465322141" duration="4296000" />
-      <workItem from="1655535979836" duration="6516000" />
-      <workItem from="1655608265990" duration="594000" />
-      <workItem from="1655623051569" duration="7904000" />
-      <workItem from="1655724572518" duration="9000" />
-      <workItem from="1655724644050" duration="1000" />
-      <workItem from="1655725813117" duration="5955000" />
-      <workItem from="1655809281685" duration="24000" />
-      <workItem from="1655810659097" duration="2000" />
-      <workItem from="1655812440170" duration="7418000" />
-      <workItem from="1655880504902" duration="3431000" />
-      <workItem from="1655884002704" duration="1158000" />
-      <workItem from="1655885257177" duration="3113000" />
-      <workItem from="1655966188308" duration="2000" />
-      <workItem from="1655983665110" duration="3495000" />
-      <workItem from="1656049718981" duration="1000" />
-      <workItem from="1656061965011" duration="8390000" />
-      <workItem from="1656144246078" duration="5886000" />
-      <workItem from="1656151880237" duration="39000" />
+      <updated>1656337094272</updated>
+      <workItem from="1656337095662" duration="1154000" />
+      <workItem from="1656416674057" duration="7603000" />
+      <workItem from="1656474462142" duration="3000" />
+      <workItem from="1656483985364" duration="7291000" />
     </task>
-    <task id="LOCAL-00001" summary="jpa 프로젝트 주석 추가함">
-      <created>1654520628984</created>
+    <task id="LOCAL-00001" summary="spring-data-jpa 설정 완료">
+      <created>1656338248789</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1654520628984</updated>
+      <updated>1656338248789</updated>
     </task>
-    <task id="LOCAL-00002" summary="jpa 영속성 관련 공부 중">
-      <created>1654609966619</created>
+    <task id="LOCAL-00002" summary="spring-data-jpa 관련 공부 중">
+      <created>1656424706815</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1654609966619</updated>
+      <updated>1656424706815</updated>
     </task>
-    <task id="LOCAL-00003" summary="jpa 여러가지 어노테이션 공부함">
-      <created>1654698089720</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1654698089720</updated>
-    </task>
-    <task id="LOCAL-00004" summary="기초 연관관계 및 mappedby속성에 대한 공부">
-      <created>1654777985095</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1654777985095</updated>
-    </task>
-    <task id="LOCAL-00005" summary="기초 연관관계 및 mappedby속성에 대한 공부">
-      <created>1654864689152</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1654864689152</updated>
-    </task>
-    <task id="LOCAL-00006" summary="기초 연관관계 및 mappedby속성에 대한 공부">
-      <created>1654955300034</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1654955300034</updated>
-    </task>
-    <task id="LOCAL-00007" summary="고급 연관관계 관련 공부 중">
-      <created>1655024389698</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1655024389698</updated>
-    </task>
-    <task id="LOCAL-00008" summary="고급 연관관계 관련 공부 중">
-      <created>1655129339349</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1655129339349</updated>
-    </task>
-    <task id="LOCAL-00009" summary="프록시 관련 내용 공부 중">
-      <created>1655215190657</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1655215190657</updated>
-    </task>
-    <task id="LOCAL-00010" summary="프록시 관련 내용 공부 중">
-      <created>1655299208892</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1655299208892</updated>
-    </task>
-    <task id="LOCAL-00011" summary="값 타입 컬렉션 관련 공부 중">
-      <created>1655373449650</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1655373449650</updated>
-    </task>
-    <task id="LOCAL-00012" summary="JPQL 관련 공부 중">
-      <created>1655470916398</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1655470916398</updated>
-    </task>
-    <task id="LOCAL-00013" summary="JPQL 관련 공부 중">
-      <created>1655543335104</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1655543335104</updated>
-    </task>
-    <task id="LOCAL-00014" summary="JPQL 관련 공부 중">
-      <created>1655632696855</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1655632696855</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Criteria 공부 중">
-      <created>1655733554050</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1655733554050</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Criteria 공부 중">
-      <created>1655819920414</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1655819920414</updated>
-    </task>
-    <task id="LOCAL-00017" summary="queryDsl 설정 중(책에 나온 것과는 좀 다름)">
-      <created>1655888334165</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1655888334166</updated>
-    </task>
-    <task id="LOCAL-00018" summary="queryDsl 공부 중">
-      <created>1655992598306</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1655992598306</updated>
-    </task>
-    <task id="LOCAL-00019" summary="nativeQuery 공부 중">
-      <created>1656072985301</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1656072985301</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140201000" />
+  <component name="TestHistory">
+    <history-entry file="MemberServiceTest_회원가입 - 2022.06.28 at 21h 45m 17s.xml">
+      <configuration name="MemberServiceTest.회원가입" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MemberServiceTest_test - 2022.06.28 at 21h 46m 41s.xml">
+      <configuration name="MemberServiceTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="16051000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="859" y="20" width="974" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.56126916" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50053304" side_tool="true" weight="0.31344903" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49946696" weight="0.31236443" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32321042" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" weight="0.329718" />
-      <window_info anchor="right" id="Theme Preview" order="0" />
-      <window_info anchor="right" id="Database" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info id="Designer" order="5" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.3369803" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.3264642" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.5109409" />
-      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32782516" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Designer" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.5618337" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50053304" side_tool="true" weight="0.31344903" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.31019524" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32321042" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" weight="0.329718" />
-      <window_info anchor="right" id="Theme Preview" order="0" />
-      <window_info anchor="right" id="Database" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.5109409" />
-      <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="jpa 프로젝트 주석 추가함" />
-    <MESSAGE value="jpa 영속성 관련 공부 중" />
-    <MESSAGE value="jpa 여러가지 어노테이션 공부함" />
-    <MESSAGE value="기초 연관관계 및 mappedby속성에 대한 공부" />
-    <MESSAGE value="고급 연관관계 관련 공부 중" />
-    <MESSAGE value="프록시 관련 내용 공부 중" />
-    <MESSAGE value="값 타입 컬렉션 관련 공부 중" />
-    <MESSAGE value="JPQL 관련 공부 중" />
-    <MESSAGE value="Criteria 공부 중" />
-    <MESSAGE value="queryDsl 설정 중(책에 나온 것과는 좀 다름)" />
-    <MESSAGE value="queryDsl 공부 중" />
-    <MESSAGE value="nativeQuery 공부 중" />
-    <option name="LAST_COMMIT_MESSAGE" value="nativeQuery 공부 중" />
+    <MESSAGE value="spring-data-jpa 설정 완료" />
+    <MESSAGE value="spring-data-jpa 관련 공부 중" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring-data-jpa 관련 공부 중" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/PhoneNumber.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/User.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/JoinColumn.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/PhoneServiceProvider.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/20220616/PhoneNumber.java">
+    <entry file="file://$PROJECT_DIR$/clean.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/20220616/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/20220616/PhoneServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/20220616/Zipcode.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/20220616/Address.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/20220616/User.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/domain/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Address2.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/AddressEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Member2.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/20220617/Address2.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/20220617/Member2.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/20220617/AddressEntity.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/domain/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/domain/Delivery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-          <folding>
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/domain/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/domain/Album.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/domain/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#320#321#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/domain/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/20220617/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/20220604/Board.java">
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/item/QAlbum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="11" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/QAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="73" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="76" />
+        <state relative-caret-position="112">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Team.java">
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/QCategory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" lean-forward="true" selection-start-column="3" selection-end-column="3" />
+        <state relative-caret-position="112">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/QDelivery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/QMember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/QOrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/item/QItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/item/QMovie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/UserDto.java">
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/item/QBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="112">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/jpabook/jpashop/service/MemberServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
           <folding>
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Member_.java" />
-    <entry file="file://$PROJECT_DIR$/target/classes/jpabook/start/Address.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/web/MemberController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#750#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch02-jpa-start1.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/member.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Address.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/appConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-          </folding>
+          <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/QMember.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/QOrder.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/QProduct.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/QAddress.java" />
-    <entry file="file://$MAVEN_REPOSITORY$/com/querydsl/querydsl-jpa/5.0.0/querydsl-jpa-5.0.0.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/QTeam.java" />
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/start/QOrder.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/webAppConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="99" selection-start-line="25" selection-start-column="99" selection-end-line="25" selection-end-column="99" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        <state relative-caret-position="334">
+          <caret line="50" column="39" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/querydsl/querydsl-jpa/5.0.0/querydsl-jpa-5.0.0.jar!/com/querydsl/jpa/JPAQueryBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-          <folding>
-            <element signature="e#1937#1938#0" expanded="true" />
-            <element signature="e#1999#2000#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/start/QProduct.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/MemberRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/ItemDTO.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.10.2.RELEASE/spring-data-jpa-1.10.2.RELEASE.jar!/org/springframework/data/jpa/repository/JpaSpecificationExecutor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderSpec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="3" selection-start-line="6" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="320">
+          <caret line="23" column="106" selection-start-line="23" selection-start-column="99" selection-end-line="23" selection-end-column="106" />
           <folding>
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#849#850#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1279#1280#0" expanded="true" />
-            <element signature="e#1317#1318#0" expanded="true" />
-            <element signature="e#1350#1351#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1459#1460#0" expanded="true" />
+            <element signature="e#297#697#0" expanded="true" />
+            <element signature="e#628#636#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Member.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/service/MockCreateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/web/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.12.2.RELEASE/spring-data-commons-1.12.2.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/OrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/jpashop/domain/QOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/custom/OrderRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/custom/CustomOrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/service/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/web/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/ItemRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/MemberRepositoryCustom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="35" />
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1813#1814#0" expanded="true" />
-            <element signature="e#1838#1839#0" expanded="true" />
-            <element signature="e#1872#1873#0" expanded="true" />
-            <element signature="e#1900#1901#0" expanded="true" />
-            <element signature="e#1935#1936#0" expanded="true" />
-            <element signature="e#1966#1967#0" expanded="true" />
-            <element signature="e#2014#2015#0" expanded="true" />
-            <element signature="e#2054#2055#0" expanded="true" />
-            <element signature="e#2081#2082#0" expanded="true" />
-            <element signature="e#2107#2108#0" expanded="true" />
-            <element signature="e#2142#2143#0" expanded="true" />
-            <element signature="e#2172#2173#0" expanded="true" />
-            <element signature="e#2210#2211#0" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
-            <element signature="e#2288#2289#0" expanded="true" />
-            <element signature="e#2324#2325#0" expanded="true" />
-            <element signature="e#2353#2354#0" expanded="true" />
-            <element signature="e#2380#2381#0" expanded="true" />
-            <element signature="e#2418#2419#0" expanded="true" />
-            <element signature="e#2450#2451#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/DoubleTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/MemberRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="128">
+          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.10.2.RELEASE/spring-data-jpa-1.10.2.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/Repository2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/service/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/web/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/repository/Repository1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding>
+            <element signature="e#570#581#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -997,64 +855,6 @@
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>ch02-jpa-start1</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>11</last-edited>
@@ -1067,20 +867,6 @@
           </splitter-proportions>
         </settings>
       </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
     </states>
-  </component>
-  <component name="mavenExecuteGoalHistory">
-    <option value="" />
   </component>
 </project>
