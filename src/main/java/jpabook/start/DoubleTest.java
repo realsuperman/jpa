@@ -24,7 +24,7 @@ public class DoubleTest {
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
         //Order order = em.find(Order.class,1L);
-        List<Order> order = em.createQuery("select o from Order o",Order.class).getResultList();
+        //List<Order> order = em.createQuery("select o from Order o join fetch o.member join fetch o.delivery",Order.class).getResultList();
 
 /*        em.setFlushMode(FlushModeType.COMMIT);
         tx.begin();
