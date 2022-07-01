@@ -16,13 +16,52 @@ import org.h2.engine.User;
 
 import javax.persistence.*;
 import java.math.BigInteger;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class DoubleTest {
     static EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
     public static void main(String[] args) throws Exception {
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
+
+        EntityGraph<Order> graph = em.createEntityGraph(Order.class);
+        graph.addAttributeNodes("member");
+        Subgraph<OrderItem> orderItems = graph.addSubgraph("orderItems");
+        orderItems.addAttributeNodes("item");
+        Map hints = new HashMap();
+        hints.put("javax.persistence.fetchgraph",graph);
+        Order order = em.find(Order.class,1L,hints);
+/*        EntityGraph<Order> graph = em.createEntityGraph(Order.class);
+        graph.addAttributeNodes("member");
+        Map hints = new HashMap();
+        hints.put("javax.persistence.fetchgraph",graph);
+        Order order = em.find(Order.class,1,hints);*/
+        //List<Order> list = em.createQuery("select o from Order o where o.id=:orderId",Order.class).setParameter("orderId",1L).setHint("javax.persistence.fetchgraph",em.getEntityGraph("Order.withAll")).getResultList();
+        //EntityGraph graph = em.getEntityGraph("Order.withAll");
+/*        Map hints = new HashMap();
+        hints.put("javax.persistence.fetchgraph",em.getEntityGraph("Order.withAll"));
+        Order order = em.find(Order.class,1L,hints);*/
+/*
+        EntityGraph graph = em.getEntityGraph("Order.withMember");
+        Map hints = new HashMap();
+        hints.put("javax.persistence.fetchgraph",graph);
+        Order order = em.find(Order.class,1L,hints);
+*/
+/*        Duck duck = new Duck();
+        duck.setName("csh");
+        em.persist(duck);
+        tx.begin();
+        tx.commit();*/
+/*        Test test = new Test();
+        test.setUsername("최성훈");
+        test.setVip(true);
+        em.persist(test);
+        tx.begin();
+        tx.commit();
+        Test t = em.find(Test.class,1L);
+        System.out.println(t.isVip());*/
         //Order order = em.find(Order.class,1L);
         //List<Order> order = em.createQuery("select o from Order o join fetch o.member join fetch o.delivery",Order.class).getResultList();
 

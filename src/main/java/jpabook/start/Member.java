@@ -16,6 +16,7 @@ public class Member extends BaseEntity{
     @Embedded
     private Address address;
     @OneToMany(mappedBy = "member")
+    //@OrderBy("id desc,orderDate asc") // 이런식으로 orderby절을 이용하여 순서를 관리할 수 있다
     private List<Order> orders = new ArrayList<Order>();
 
     public List<Order> getOrders() {

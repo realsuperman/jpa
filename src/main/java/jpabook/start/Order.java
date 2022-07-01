@@ -5,6 +5,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+//@NamedEntityGraph(name = "Order.withMember",attributeNodes = {@NamedAttributeNode("member")})
+@NamedEntityGraph(name="Order.withAll",attributeNodes = {
+        @NamedAttributeNode("member"),
+        @NamedAttributeNode(value="orderItems",subgraph = "orderItems")
+    },
+    subgraphs = @NamedSubgraph(name="orderItems",attributeNodes = {
+        @NamedAttributeNode("item")
+    })
+)
 @Entity
 @Table(name="ORDERS")
 public class Order extends BaseEntity{
@@ -12,7 +21,7 @@ public class Order extends BaseEntity{
     @Column(name="ORDER_ID")
     private Long id;
 
-    @ManyToOne(fetch=FetchType.LAZY)
+    @ManyToOne(fetch=FetchType.LAZY,optional = false)
     @JoinColumn(name="MEMBER_ID")
     private Member member;
 

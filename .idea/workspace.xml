@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dc441f2-3443-487f-a71a-393afcc065a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/start/BooleanToYNConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/start/Duck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/start/DuckListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jpabook/start/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/DoubleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/start/DoubleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/start/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/start/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/start/Order.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -19,11 +24,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="19" column="59" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="59" />
+            <state relative-caret-position="128">
+              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1203#1204#0" expanded="true" />
+                <element signature="e#1234#1235#0" expanded="true" />
+                <element signature="e#1516#1517#0" expanded="true" />
+                <element signature="e#1545#1546#0" expanded="true" />
+                <element signature="e#1798#1799#0" expanded="true" />
+                <element signature="e#1831#1832#0" expanded="true" />
+                <element signature="e#1892#1893#0" expanded="true" />
+                <element signature="e#1936#1937#0" expanded="true" />
+                <element signature="e#1963#1964#0" expanded="true" />
+                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="e#2022#2023#0" expanded="true" />
+                <element signature="e#2050#2051#0" expanded="true" />
+                <element signature="e#2085#2086#0" expanded="true" />
+                <element signature="e#2117#2118#0" expanded="true" />
+                <element signature="e#2165#2166#0" expanded="true" />
+                <element signature="e#2207#2208#0" expanded="true" />
+                <element signature="e#2245#2246#0" expanded="true" />
+                <element signature="e#2274#2275#0" expanded="true" />
+                <element signature="e#2323#2324#0" expanded="true" />
+                <element signature="e#2359#2360#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/OrderItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/DoubleTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="34" column="50" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,9 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Child3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/ChildId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/GrandChild.java" />
         <option value="$PROJECT_DIR$/src/main/java/jpabook/start/GrandChildId.java" />
         <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Parent4.java" />
         <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Child4.java" />
@@ -96,7 +139,6 @@
         <option value="$PROJECT_DIR$/src/main/java/jpabook/start/PhoneNumber.java" />
         <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Zipcode.java" />
         <option value="$PROJECT_DIR$/src/main/java/jpabook/start/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/jpabook/start/PhoneServiceProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Address2.java" />
         <option value="$PROJECT_DIR$/src/main/java/jpabook/start/AddressEntity.java" />
@@ -115,8 +157,12 @@
         <option value="$PROJECT_DIR$/src/main/java/generated-sources/java/jpabook/start/QOrder.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/jpabook/start/ItemDTO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Member.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/BooleanToYNConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/DuckListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Duck.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Member.java" />
         <option value="$PROJECT_DIR$/src/main/java/jpabook/start/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/jpabook/start/DoubleTest.java" />
       </list>
@@ -151,7 +197,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -164,7 +210,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,6 +303,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -445,7 +491,9 @@
       <workItem from="1656151880237" duration="39000" />
       <workItem from="1656492233148" duration="839000" />
       <workItem from="1656568896227" duration="2000" />
-      <workItem from="1656575260306" duration="5388000" />
+      <workItem from="1656575260306" duration="5416000" />
+      <workItem from="1656651404515" duration="3000" />
+      <workItem from="1656654041652" duration="7647000" />
     </task>
     <task id="LOCAL-00001" summary="jpa 프로젝트 주석 추가함">
       <created>1654520628984</created>
@@ -587,11 +635,18 @@
       <option name="project" value="LOCAL" />
       <updated>1656493038302</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="JPA 컬렉션 관련 공부 중">
+      <created>1656583077038</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1656583077039</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146430000" />
+    <option name="totallyTimeSpent" value="154108000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -604,13 +659,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.21375267" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.21801706" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.329718" />
@@ -619,7 +675,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50053304" side_tool="true" weight="0.31344903" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.31236443" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.30911064" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32321042" />
@@ -641,7 +697,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.5618337" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.21801706" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.329718" />
@@ -650,7 +706,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50053304" side_tool="true" weight="0.31344903" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.31019524" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49946696" visible="true" weight="0.30911064" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32321042" />
@@ -660,7 +716,7 @@
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.5109409" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.2489339" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -684,20 +740,11 @@
     <MESSAGE value="queryDsl 공부 중" />
     <MESSAGE value="nativeQuery 공부 중" />
     <MESSAGE value="N+1문제 관련 공부 중" />
-    <option name="LAST_COMMIT_MESSAGE" value="N+1문제 관련 공부 중" />
+    <MESSAGE value="JPA 컬렉션 관련 공부 중" />
+    <option name="LAST_COMMIT_MESSAGE" value="JPA 컬렉션 관련 공부 중" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/PhoneNumber.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/User.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/JoinColumn.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/PhoneServiceProvider.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/20220616/PhoneNumber.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -828,37 +875,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/start/QProduct.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/ItemDTO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/UserDto.java" />
     <entry file="file://$PROJECT_DIR$/target/generated-sources/java/jpabook/start/QTeam.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="73" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -886,16 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/DoubleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -910,27 +919,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#744#745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/BooleanToYNConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Duck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="90" selection-start-line="6" selection-start-column="90" selection-end-line="6" selection-end-column="90" />
+          <folding>
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/DuckListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Member.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="224">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" lean-forward="true" selection-start-line="10" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/OrderItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="19" column="59" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="59" />
+        <state relative-caret-position="128">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1234#1235#0" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
+            <element signature="e#1545#1546#0" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#1892#1893#0" expanded="true" />
+            <element signature="e#1936#1937#0" expanded="true" />
+            <element signature="e#1963#1964#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+            <element signature="e#2022#2023#0" expanded="true" />
+            <element signature="e#2050#2051#0" expanded="true" />
+            <element signature="e#2085#2086#0" expanded="true" />
+            <element signature="e#2117#2118#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+            <element signature="e#2207#2208#0" expanded="true" />
+            <element signature="e#2245#2246#0" expanded="true" />
+            <element signature="e#2274#2275#0" expanded="true" />
+            <element signature="e#2323#2324#0" expanded="true" />
+            <element signature="e#2359#2360#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jpabook/start/DoubleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
