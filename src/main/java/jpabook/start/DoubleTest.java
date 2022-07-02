@@ -13,6 +13,8 @@ import com.querydsl.jpa.impl.JPAQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import com.querydsl.jpa.impl.JPAUpdateClause;
 import org.h2.engine.User;
+import org.hibernate.Hibernate;
+import org.hibernate.proxy.HibernateProxy;
 
 import javax.persistence.*;
 import java.math.BigInteger;
@@ -22,17 +24,43 @@ import java.util.Map;
 
 public class DoubleTest {
     static EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
+    public static <T> T unproxy(Object entity){
+        if(entity instanceof HibernateProxy) {
+            entity = ((HibernateProxy) entity)
+                    .getHibernateLazyInitializer()
+                    .getImplementation();
+        }
+        return (T) entity;
+    }
     public static void main(String[] args) throws Exception {
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
-
-        EntityGraph<Order> graph = em.createEntityGraph(Order.class);
+        Book saveBook = new Book();
+        saveBook.setName("jpabook");
+        saveBook.setAuthor("kim");
+        em.persist(saveBook);
+        tx.begin();
+        em.flush();
+        em.clear();
+        Item proxyItem = em.getReference(Item.class,saveBook.getId());
+        Item unProxyItem =  unproxy(proxyItem);
+        if(unProxyItem instanceof Book){
+            Book book = (Book)unProxyItem;
+            System.out.println(book.getAuthor());
+        }
+/*        Member member = new Member();
+        member.setName("csh");
+        em.persist(member);
+        Member test = em.find(Member.class,37L);
+        em.clear();
+        if(test==member) System.out.println("true");*/
+/*        EntityGraph<Order> graph = em.createEntityGraph(Order.class);
         graph.addAttributeNodes("member");
         Subgraph<OrderItem> orderItems = graph.addSubgraph("orderItems");
         orderItems.addAttributeNodes("item");
         Map hints = new HashMap();
         hints.put("javax.persistence.fetchgraph",graph);
-        Order order = em.find(Order.class,1L,hints);
+        Order order = em.find(Order.class,1L,hints);*/
 /*        EntityGraph<Order> graph = em.createEntityGraph(Order.class);
         graph.addAttributeNodes("member");
         Map hints = new HashMap();
