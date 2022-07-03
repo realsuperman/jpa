@@ -1,5 +1,9 @@
 package jpabook.start;
 
+import org.hibernate.annotations.BatchSize;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +19,9 @@ public class Member extends BaseEntity{
     private String zipCode;*/
     @Embedded
     private Address address;
+
+    //@BatchSize(size=5) // 이거를 설정하면 개체를 가지고오는 시점에 size개수 만큼을 미리 메모리에 가져다 둔다
+    @Fetch(FetchMode.SUBSELECT)
     @OneToMany(mappedBy = "member")
     //@OrderBy("id desc,orderDate asc") // 이런식으로 orderby절을 이용하여 순서를 관리할 수 있다
     private List<Order> orders = new ArrayList<Order>();

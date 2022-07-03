@@ -24,4 +24,14 @@ public class Album extends Item{
     public void setEtc(String etc) {
         this.etc = etc;
     }
+
+    @Override
+    public String getTitle() {
+        return "[작가:"+getArtist()+"배우:"+getEtc()+"]";
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 }

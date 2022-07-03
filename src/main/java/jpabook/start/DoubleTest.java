@@ -35,7 +35,12 @@ public class DoubleTest {
     public static void main(String[] args) throws Exception {
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
-        Book saveBook = new Book();
+/*        List<Order> list  = em.createQuery("select o from Order o",Order.class).setHint("org.hibernate.readOnly",true).getResultList();
+
+        for(Order order : list) System.out.println(order.getId());*/
+/*        OrderItem orderItem = em.find(OrderItem.class,1L);
+        orderItem.printItem();*/
+/*        Book saveBook = new Book();
         saveBook.setName("jpabook");
         saveBook.setAuthor("kim");
         em.persist(saveBook);
@@ -48,6 +53,7 @@ public class DoubleTest {
             Book book = (Book)unProxyItem;
             System.out.println(book.getAuthor());
         }
+        if(unProxyItem==proxyItem) System.out.println("test");*/
 /*        Member member = new Member();
         member.setName("csh");
         em.persist(member);
