@@ -8,6 +8,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Cacheable //2차캐시 설정
 @Entity
 public class Member extends BaseEntity{
     @Id @GeneratedValue

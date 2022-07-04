@@ -35,6 +35,16 @@ public class DoubleTest {
     public static void main(String[] args) throws Exception {
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
+
+/*        EntityTransaction tx2 = em.getTransaction();
+
+        tx1.begin();
+        Board board = em.find(Board.class,1L);
+        tx2.begin();
+        board.setTitle("제목C");
+        tx2.commit();
+        board.setTitle("제목B");
+        tx1.begin();*/
 /*        List<Order> list  = em.createQuery("select o from Order o",Order.class).setHint("org.hibernate.readOnly",true).getResultList();
 
         for(Order order : list) System.out.println(order.getId());*/
