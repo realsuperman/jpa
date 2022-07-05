@@ -30,6 +30,11 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
+			<version>RELEASE</version>
+		</dependency>
 		<!-- H2 데이터베이스 -->
 		<dependency>
 			<groupId>com.h2database</groupId>

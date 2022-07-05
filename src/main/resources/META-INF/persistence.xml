@@ -30,6 +30,12 @@
             DISABLE_SELECTIVE(모든 엔티티를 캐시하는데 Cacheable(false)로 명시된 엔티티는 캐시하지 않는다 << false로 명시해야만 캐시 안되는거임
             UNSPECIFIED(JPA 구현체가 정의한 설정을 따른다)
         -->
+        <properties>
+            <property name="hibernate.cache.use_second_level_cache" value="true"/> <!-- 2차 캐시를 활성화 한다 -->
+            <property name="hibernate.cache.use_query_cache" value="true"/> <!-- 쿼리 캐시를 활성화 한다 -->
+            <property name="hibernate.cache.region.factory_class" value="org.hibernate.cache.ehcache.internal.EhcacheRegionFactory"/> <!-- 2차캐 시를 처리할 클래스를 지정한다 여기서는 EHCACHE를 사용하므로 해당 팩토리를 지정하였음-->
+            <property name="hibernate.generate_statistics" value="true"/> <!-- 이 속성을 true로 설정하면 하이버네이트가 여러 통계정보를 출력해주는데 캐시 적용 여부를 확인할 수 있다(개발 환경에서만 적용하자)-->
+        </properties>
     </persistence-unit>
 
 </persistence>

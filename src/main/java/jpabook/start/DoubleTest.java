@@ -35,6 +35,15 @@ public class DoubleTest {
     public static void main(String[] args) throws Exception {
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
+        //em.createQuery("select i from Item i",Item.class).setHint("org.hibernate.cacheable",true).getResultList();
+        /*Map<String,Object> param = new HashMap<String,Object>(); // 아래와 같이 쿼리단위로 보관모드와 조회모드를 설정할 수 있다
+        param.put("javax.persistence.cache.retrieveMode",CacheRetrieveMode.BYPASS);
+        param.put("javax.persistence.cache.storeMode",CacheStoreMode.BYPASS);
+        Member member1 = em.find(Member.class,1L,param); // jpql을 사용하는 경우 setHine에다가 "javax.XXXX",CacheRetXXX: 이런식으로 값을 주면 된다
+        Member member2 = em.find(Member.class,1L);
+        if(member1==member2) System.out.println("test");*/
+        //em.setProperty("javax.persistence.cache.retrieveMode",CacheRetrieveMode.BYPASS); // 캐시를 무시하고 데이터베이스를 직접 접근한다는 의미(참고로 retrieveMode는 캐시 조회 모드이다(USE는 캐시에서 조회 BYPASS는 DB직접 접근)
+        //em.setProperty("javax.persistence.cache.storeMode",CacheRetrieveMode.BYPASS); // 캐시 보관 모드 ( USE : 데이터를 캐시에 저장한다 캐시에 정보가 있으면 갱신안함, BYPASS : 캐시에 저장안함, REFRESH : USE전략 + 캐시에 정보 있어도 갱신)
 
 /*        EntityTransaction tx2 = em.getTransaction();
 
